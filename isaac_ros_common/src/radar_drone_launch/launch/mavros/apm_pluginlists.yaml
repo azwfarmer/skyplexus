@@ -1,0 +1,78 @@
+/mavros/**:
+  ros__parameters:
+    plugin_denylist:
+      - 3dr_radio
+      - actuator_control
+      - altitude
+      - camera
+      - cam_imu_sync
+      - cmd
+      - command
+      - debug_value
+      - companion_process # consider using later
+      - dummy
+      - fake_gps
+      - ftp
+      - geofence
+      - gimbal_control
+      - guided_target
+      - hil
+      - home_position
+      - image_pub
+      - landing_target
+      - log_transfer
+      - mag_calibration
+      - mag_calibration_status
+      - manual_control
+      - mission
+      - mocap
+      - mocap_pose_estimate
+      - mount_control
+      - obstacle_distance
+      - onboard_computer
+      - onboard_computer_status
+      - optical_flow
+      - param # reconsider
+      - play_tune
+      - px4flow
+      - rangefinder
+      - rallypoint
+      - rc_io
+      - rc
+      - setpoint_accel
+      - setpoint_attitude
+      - setpoint_position
+      - setpoint_raw
+      - setpoint_velocity
+      - setpoint_trajectory
+      - trajectory
+      - tunnel
+      - vfr_hud
+      - vision_pose_estimate
+      - vision_pose
+      - vision_speed_estimate
+      - vision_speed
+      - waypoint
+      - wheel_odometry
+      - gps_input
+      - cellular_status #consider later
+      - wind
+      - wind_estimation
+    plugin_allowlist:
+      - global_position
+      - altitude
+      - imu
+      - local_position
+      - nav_controller_output
+      - sys
+      - time
+      - terrain
+      - odometry
+      - odom
+      - gpsstatus
+      - gps_rtk
+      - esc_telemetry
+      - esc_status
+      - distance_sensor
+      - adsb
+      - vibration
