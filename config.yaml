@@ -1,0 +1,62 @@
+Configor:
+  DataStream:
+    IMUTopics:
+      - key: "/ouster/imu"
+        value:
+          Type: "SENSOR_IMU"
+          Intrinsics: "/workspaces/isaac_ros-dev/imu_intrinsic.yaml"
+          AcceWeight: 17.68
+          GyroWeight: 57.66
+    RadarTopics:
+    LiDARTopics:
+      - key: "/ouster/points"
+        value:
+          Type: "OUSTER_POINTS"
+          Weight: 100.0
+    CameraTopics:
+      # - key: "/left/image_raw"
+      #   value:
+      #     Type: "SENSOR_IMAGE_RS_FIRST"
+      #     Intrinsics: "/workspaces/isaac_ros-dev/intrinsic.yaml"
+      #     Weight: 50.0
+      #     TrackLengthMin: 10
+    ReferIMU: "/ouster/imu"
+    BagPath: "/workspaces/isaac_ros-dev/isaac_ros_common/src/data/rosbag2_2024_08_24-17_29_54.bag"
+    BeginTime: -1
+    Duration: -1
+    OutputPath: "/workspaces/isaac_ros-dev"
+  Prior:
+    GravityNorm: 9.8
+    SpatTempPrioriPath: ""
+    OptTemporalParams: true
+    TimeOffsetPadding: 0.10
+    ReadoutTimePadding: 0.01
+    KnotTimeDist:
+      SO3Spline: 0.05
+      ScaleSpline: 0.05
+    NDTLiDAROdometer:
+      Resolution: 1.0
+      KeyFrameDownSample: 0.1
+    LiDARDataAssociate:
+      MapDownSample: 0.05
+      PointToSurfelMax: 0.1
+      PlanarityMin: 0.6
+    CauchyLossForRadarFactor: 0.1
+    CauchyLossForLiDARFactor: 0.5
+    CauchyLossForCameraFactor: 1.0
+  Preference:
+    UseCudaInSolving: false
+    Outputs:
+      - LiDARMaps
+      - VisualMaps
+      # - RadarMaps
+      - VisualLiDARCovisibility
+      - VisualKinematics
+      - ColorizedLiDARMap
+      - AlignedInertialMes
+      - VisualReprojErrors
+      # - RadarDopplerErrors
+    OutputDataFormat: "YAML"
+    ThreadsToUse: -1
+    SplineScaleInViewer: 3.0
+    CoordSScaleInViewer: 0.3

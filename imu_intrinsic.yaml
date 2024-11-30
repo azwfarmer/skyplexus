@@ -1,0 +1,46 @@
+Intrinsics:
+  # polymorphic pointers point to a base class and also point to objects of derived classes
+  # don't care about this field
+  ptr_wrapper:
+    id: 2147483649
+    data:
+      ACCE:
+        # 3-dime constant bias vector of the accelerator
+        BIAS:
+          r0c0: 0
+          r1c0: 0
+          r2c0: 0
+        # mapping matrix, composed of scale factors and non-orthogonality factors
+        # [      s_x,  gamma_xy, gamma_xz;
+        #  -gamma_xy,       s_y, gamma_yz;
+        #  -gamma_xz, -gamma_yz,      z_z]
+        MAP_COEFF:
+          r0c0: 1
+          r1c0: 1
+          r2c0: 1
+          r3c0: 0
+          r4c0: 0
+          r5c0: 0
+      GYRO:
+        # 3-dime constant bias vector of the gyroscope
+        BIAS:
+          r0c0: 0
+          r1c0: 0
+          r2c0: 0
+        # mapping matrix, composed of scale factors and non-orthogonality factors
+        # [      s_x,  gamma_xy, gamma_xz;
+        #  -gamma_xy,       s_y, gamma_yz;
+        #  -gamma_xz, -gamma_yz,      z_z]
+        MAP_COEFF:
+          r0c0: 1
+          r1c0: 1
+          r2c0: 1
+          r3c0: 0
+          r4c0: 0
+          r5c0: 0
+      # rotation misalignment between the accelerator and the gyroscope (from frame {A} to frame {G})
+      SO3_AtoG:
+        qx: 0
+        qy: 0
+        qz: 0
+        qw: 1

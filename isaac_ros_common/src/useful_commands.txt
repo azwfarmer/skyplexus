@@ -1,0 +1,161 @@
+./isaac_ros_common/scripts/run_dev.sh -d ~/radar_drone/
+
+Setup:
+
+sudo apt install gitk nano
+follow setup instructions: https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/compute/index.html
+
+and possibly here: https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/compute/index.html#jetson-platforms
+
+git config --global user.email "mtkliema@gmail.com"
+git config --global user.name "Matthew Kliemann"
+
+(on local machine)
+ssh-copy-id aaron@100.85.95.43  to add to known_hosted/authorized_users
+
+
+
+----------
+
+Build:
+
+
+// Build in release mode (defaults to debug mode)
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
+
+(--executor sequential to avoid overwhelming on embedded hw, still might parallelize individually https://answers.ros.org/question/368249/colcon-build-number-of-threads/)
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --executor sequential
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo --executor sequential
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo --executor sequential --packages-ignore perception
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo --executor sequential --packages-select altosradar
+
+// Node and corresponding topics
+ros2 node list
+ros2 node info <node_name>
+rqt_graph
+ros2 topic list -t
+ros2 topic echo <topic_name>
+ros2 topic info <topic_name>
+ros2 interface show geometry_msgs/msg/Twist
+ros2 topic hz /turtle1/pose
+ros2 run rqt_console rqt_console
+ros2 run tf2_tools view_frames
+
+// Ouster:
+// https://github.com/ouster-lidar/ouster-ros/blob/ros2/docs/index.rst
+// Includes visualization
+ros2 launch ouster_ros sensor.launch.xml sensor_hostname:=192.168.0.100   
+viz:=true/false
+metadata:=$PWD/<json file name>
+
+// Mavros
+ros2 launch mavros apm.launch fcu_url:=/dev/ttyTHS1:921600
+ros2 topic echo /mavros/imu/data
+
+---------
+Typical Run Process
+
+cd ~/radar_drone
+./isaac_ros_common/scripts/run_dev.sh -d ~/radar_drone/
+cd isaac_ros_common/src/
+<colcon build command> colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+cd ..
+./startup.sh  (Matt modifies to no launch from here)
+source /workspaces/isaac_ros-dev/isaac_ros_common/src/install/setup.bash 
+./run_timesync.sh
+./run_preptp.sh | tee -a /workspaces/isaac_ros-dev/isaac_ros_common/preptp.log & ./run_ptp.sh | tee -a /workspaces/isaac_ros-dev/isaac_ros_common/ptp.log &
+ros2 launch radar_drone_launch apm_altos.launch.py
+----------
+
+// If the ouster fails to load initially, you may have to run these two commands 
+// only appeared on older drivers
+ros2 lifecycle set /ouster/os_driver configure
+ros2 lifecycle set /ouster/os_driver activate
+
+---------
+
+// Publish from command line
+ros2 run tf2_ros static_transform_publisher "0" "0" "0" "0" "0" "0" "map" "altosRadar"
+ros2 run tf2_ros static_transform_publisher "0" "0" "0" "0" "0" "0" "map" "os_sensor"
+ros2 run tf2_ros static_transform_publisher "0" "0" "0" "0" "0" "0" "map" "os_lidar"
+ros2 run tf2_ros static_transform_publisher "0" "0" "0" "0" "0" "0" "map" "camera"
+
+
+// Modify log file path inside isaac_ros_common/radar_drone_launch/launch/replay.py
+ros2 launch radar_drone_launch replay.py
+
+---------
+
+
+Camera Calibration 
+ros2 run camera_calibration cameracalibrator --size 7x5 --square 0.03 image:=/camera/color/image_raw camera:=/camera
+cp /tmp/calibrationdata.tar.gz ~/Desktop/20240824_cal.tar.gz
+cd ~/Desktop
+mkdir 20240824
+tar -xzvf  20240824_cal.tar.gz -C 20240824
+cp ~/Desktop/20240824/ost.txt ~/radar_drone/isaac_ros_common/matt_ost.ini
+
+
+
+---------
+Calibration iKalibr
+source /opt/ros/noetic/setup.bash
+cd /workspaces/isaac_ros-dev/iKalibr
+<catkin make and install commands>
+source ./devel/setup.bash
+ roscore &
+ rosparam set use_sim_time true
+ ./run_ikalibr.sh
+
+#compiling in debug mode attempt
+# RUN . /opt/ros/noetic/setup.sh && catkin_make -DCMAKE_BUILD_TYPE=Debug ikalibr_generate_messages 
+# RUN . /opt/ros/noetic/setup.sh && catkin_make  -DCMAKE_BUILD_TYPE=Debug -j10
+# RUN . /opt/ros/noetic/setup.sh && catkin_make -DCMAKE_BUILD_TYPE=Debug install 
+
+# run in debug mode
+rosrun --prefix 'gdb -ex run --args' ikalibr ikalibr_prog _config_path:="/workspaces/isaac_ros-dev/config.yaml"
+
+
+
+
+----
+Change MTU Ouster?
+Wasn't working
+$ sudo ip link set dev eth0 mtu 9000
+sudo ifconfig eth0 mtu 9000
+didn't succeed
+
+----
+Change memory buffer size - rmem_default defaults small 
+net.core.rmem_max
+net.core.rmem_default
+sudo sysctl -a | grep net.core.rmem_max
+sudo sysctl -a | grep net.core.rmem_default
+sudo sysctl -w net.core.rmem_max=1073741824
+sudo sysctl -w net.core.rmem_default=1073741824
+Made permament by 
+echo "net.core.rmem_max=1073741824" | sudo tee -a /etc/sysctl.conf
+echo "net.core.rmem_default=1073741824" | sudo tee -a /etc/sysctl.conf
+on host.
+
+
+
+------
+Network Info
+
+**Ouster**
+
+192.168.0.99 (.100 is the ouster)
+
+255.255.255.0
+
+Eth0 (pie)
+
+
+Altos
+
+192.168.3.1 ([http://192.168.3.10/](http://192.168.3.10/) is the altos)
+255.255.255.0
+
+Eth1 (usb)
