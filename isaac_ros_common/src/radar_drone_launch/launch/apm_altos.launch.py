@@ -11,11 +11,11 @@ import numpy as np
 from scipy.spatial.transform import Rotation as R
 
 def generate_launch_description():
-    jetson_stats = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/opt/ros/humble/share/isaac_ros_jetson_stats/launch/jtop.launch.py']))
+    # jetson_stats = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(['/opt/ros/humble/share/isaac_ros_jetson_stats/launch/jtop.launch.py']))
 
     orbbec_camera = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/workspaces/isaac_ros-dev/isaac_ros_common/src/OrbbecSDK_ROS2/orbbec_camera/launch/astra2.launch.py'])
+        PythonLaunchDescriptionSource(['/workspaces/isaac_ros-dev/isaac_ros_common/src/OrbbecSDK_ROS2/orbbec_camera/launch/gemini_330_series.launch.py'])
     )
 
     mavros_apm = IncludeLaunchDescription(
@@ -32,25 +32,6 @@ def generate_launch_description():
             'rviz_config': '/workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-ros/config/viz.rviz'
         }.items()
     )
-
-    altos_parse = Node(
-        package = 'altosradar',
-        namespace = 'altos',
-        executable = 'altosRadarParse',
-        name='altos'
-    )
-
-    # imu_integrator = Node(
-    #     package='perception',
-    #     executable = 'imu_integrator',
-    #     name='imu_integrator'
-    # )
-
-    # overlay = Node(
-    #     package='perception',
-    #     executable = 'perception',
-    #     name='overlay'
-    # )
 
     everything_recorder = launch.actions.ExecuteProcess(
         cmd=['ros2', 'bag', 'record', '-a', '-x', '(.*)theora(.*)|(.*)compressed(.*)'],
@@ -89,7 +70,7 @@ def generate_launch_description():
         name='os_base_static_tf_pub',
         arguments=['--x', '0.11', '--y', '0.008', '--z', '0.116',
             '--roll', '0.0', '--pitch', '0.0','--yaw', '0.0',
-            '--frame-id', 'payload', '--child-frame-id', 'altosRadar']
+            '--frame-id', 'payload', '--child-frame-id', 'radar']
     )
 
     payload2camera_link = Node(
@@ -109,9 +90,6 @@ def generate_launch_description():
         orbbec_camera,
         mavros_apm,
         ouster_driver,
-        altos_parse,
         everything_recorder,
-        # imu_integrator,
-        # overlay,
         rviz
     ])

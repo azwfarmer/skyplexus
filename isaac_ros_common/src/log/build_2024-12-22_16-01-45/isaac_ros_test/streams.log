@@ -1,0 +1,51 @@
+[4.052s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build
+[5.355s] running develop
+[6.320s] Removing /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac-ros-test.egg-link (link to .)
+[6.588s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build
+[6.590s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_test': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/isaac_ros_test build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log --single-version-externally-managed install_data --force
+[10.137s] running egg_info
+[10.137s] writing ../build/isaac_ros_test/isaac_ros_test.egg-info/PKG-INFO
+[10.137s] writing dependency_links to ../build/isaac_ros_test/isaac_ros_test.egg-info/dependency_links.txt
+[10.137s] writing requirements to ../build/isaac_ros_test/isaac_ros_test.egg-info/requires.txt
+[10.138s] writing top-level names to ../build/isaac_ros_test/isaac_ros_test.egg-info/top_level.txt
+[12.372s] writing manifest file '../build/isaac_ros_test/isaac_ros_test.egg-info/SOURCES.txt'
+[12.373s] running build
+[12.373s] running build_py
+[12.374s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build
+[12.374s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib
+[12.374s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.374s] copying isaac_ros_test/profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.375s] copying isaac_ros_test/tegrastats_profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.375s] copying isaac_ros_test/pose_utilities.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.375s] copying isaac_ros_test/json_conversion.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.376s] copying isaac_ros_test/pcd_loader.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.376s] copying isaac_ros_test/isaac_ros_base_test.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.377s] copying isaac_ros_test/__init__.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.377s] copying isaac_ros_test/cpu_profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test
+[12.378s] running install
+[12.397s] running install_lib
+[12.488s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.489s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.489s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/tegrastats_profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.491s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/pose_utilities.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.492s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/json_conversion.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.492s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/pcd_loader.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.492s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/isaac_ros_base_test.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.493s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/__init__.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.493s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build/lib/isaac_ros_test/cpu_profiler.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test
+[12.494s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/profiler.py to profiler.cpython-310.pyc
+[12.496s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/tegrastats_profiler.py to tegrastats_profiler.cpython-310.pyc
+[12.497s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/pose_utilities.py to pose_utilities.cpython-310.pyc
+[12.498s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/json_conversion.py to json_conversion.cpython-310.pyc
+[12.500s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/pcd_loader.py to pcd_loader.cpython-310.pyc
+[12.502s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/isaac_ros_base_test.py to isaac_ros_base_test.cpython-310.pyc
+[12.505s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/__init__.py to __init__.cpython-310.pyc
+[12.506s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test/cpu_profiler.py to cpu_profiler.cpython-310.pyc
+[12.509s] running install_data
+[12.509s] copying resource/isaac_ros_test -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/share/ament_index/resource_index/packages
+[12.509s] copying package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/share/isaac_ros_test
+[12.510s] running install_egg_info
+[12.547s] Copying ../build/isaac_ros_test/isaac_ros_test.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test-0.9.0-py3.10.egg-info
+[12.550s] running install_scripts
+[12.789s] writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log'
+[14.927s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_test' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/isaac_ros_test build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,36 @@
+[2.419s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build
+[3.250s] running develop
+[3.785s] Removing /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar-drone-launch.egg-link (link to .)
+[3.932s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build
+[3.937s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/radar_drone_launch': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/radar_drone_launch build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/install.log --single-version-externally-managed install_data --force
+[4.871s] running egg_info
+[4.904s] writing ../build/radar_drone_launch/radar_drone_launch.egg-info/PKG-INFO
+[4.905s] writing dependency_links to ../build/radar_drone_launch/radar_drone_launch.egg-info/dependency_links.txt
+[4.905s] writing requirements to ../build/radar_drone_launch/radar_drone_launch.egg-info/requires.txt
+[4.906s] writing top-level names to ../build/radar_drone_launch/radar_drone_launch.egg-info/top_level.txt
+[6.533s] adding license file 'LICENSE'
+[6.534s] writing manifest file '../build/radar_drone_launch/radar_drone_launch.egg-info/SOURCES.txt'
+[6.535s] running build
+[6.535s] running build_py
+[6.536s] running install
+[6.549s] running install_lib
+[6.594s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch
+[6.594s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build/lib/radar_drone_launch/__init__.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch
+[6.596s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch/__init__.py to __init__.cpython-310.pyc
+[6.597s] running install_data
+[6.597s] copying resource/radar_drone_launch -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/ament_index/resource_index/packages
+[6.597s] copying package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch
+[6.598s] copying launch/dronecam.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.598s] copying launch/replay.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.599s] copying launch/mapgenold.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.599s] copying launch/tf_visualizer.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.600s] copying launch/apm_altos.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.600s] copying launch/mavros_only.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.600s] copying launch/new.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.601s] copying launch/mapgen.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.601s] copying launch/img_proc.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+[6.602s] running install_egg_info
+[6.643s] Copying ../build/radar_drone_launch/radar_drone_launch.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch-0.0.0-py3.10.egg-info
+[6.645s] running install_scripts
+[6.770s] writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/install.log'
+[6.893s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/radar_drone_launch' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/radar_drone_launch build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/install.log --single-version-externally-managed install_data --force

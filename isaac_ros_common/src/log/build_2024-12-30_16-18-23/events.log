@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.000816] (-) JobUnselected: {'identifier': 'altosradar'}
+[0.001078] (-) JobUnselected: {'identifier': 'gxf_isaac_camera_utils'}
+[0.001293] (-) JobUnselected: {'identifier': 'isaac_ros_apriltag_interfaces'}
+[0.001377] (-) JobUnselected: {'identifier': 'isaac_ros_argus_camera'}
+[0.001445] (-) JobUnselected: {'identifier': 'isaac_ros_bi3d_interfaces'}
+[0.001509] (-) JobUnselected: {'identifier': 'isaac_ros_common'}
+[0.001571] (-) JobUnselected: {'identifier': 'isaac_ros_launch_utils'}
+[0.001633] (-) JobUnselected: {'identifier': 'isaac_ros_nitros_bridge_interfaces'}
+[0.001695] (-) JobUnselected: {'identifier': 'isaac_ros_nova_interfaces'}
+[0.001756] (-) JobUnselected: {'identifier': 'isaac_ros_pointcloud_interfaces'}
+[0.001816] (-) JobUnselected: {'identifier': 'isaac_ros_tensor_list_interfaces'}
+[0.001875] (-) JobUnselected: {'identifier': 'isaac_ros_test'}
+[0.001936] (-) JobUnselected: {'identifier': 'orbbec_camera'}
+[0.002014] (-) JobUnselected: {'identifier': 'orbbec_camera_msgs'}
+[0.002075] (-) JobUnselected: {'identifier': 'orbbec_description'}
+[0.002134] (-) JobUnselected: {'identifier': 'ouster_ros'}
+[0.002194] (-) JobUnselected: {'identifier': 'ouster_sensor_msgs'}
+[0.002256] (-) JobUnselected: {'identifier': 'perception'}
+[0.002321] (-) JobUnselected: {'identifier': 'radar_drone_launch'}
+[0.002390] (py_perception) JobQueued: {'identifier': 'py_perception', 'dependencies': OrderedDict()}
+[0.002463] (py_perception) JobStarted: {'identifier': 'py_perception'}
+[0.099451] (-) TimerEvent: {}
+[0.199983] (-) TimerEvent: {}
+[0.300580] (-) TimerEvent: {}
+[0.401267] (-) TimerEvent: {}
+[0.501950] (-) TimerEvent: {}
+[0.602689] (-) TimerEvent: {}
+[0.703405] (-) TimerEvent: {}
+[0.804121] (-) TimerEvent: {}
+[0.904822] (-) TimerEvent: {}
+[1.005503] (-) TimerEvent: {}
+[1.105973] (-) TimerEvent: {}
+[1.206438] (-) TimerEvent: {}
+[1.306958] (-) TimerEvent: {}
+[1.407421] (-) TimerEvent: {}
+[1.507904] (-) TimerEvent: {}
+[1.608434] (-) TimerEvent: {}
+[1.708883] (-) TimerEvent: {}
+[1.809373] (-) TimerEvent: {}
+[1.909939] (-) TimerEvent: {}
+[2.010412] (-) TimerEvent: {}
+[2.110885] (-) TimerEvent: {}
+[2.211353] (-) TimerEvent: {}
+[2.311845] (-) TimerEvent: {}
+[2.408585] (py_perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/py_perception', 'build', '--build-base', '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build', 'install', '--record', '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/workspaces/isaac_ros-dev/isaac_ros_common/src/py_perception', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LIBRARY_PATH': '/usr/local/cuda/lib64/stubs', 'PYTHONWARNINGS': 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop', 'NV_LIBCUBLAS_VERSION': '12.2.5.6-1', 'CUDA_LAUNCH_BLOCKING': '1', 'USER': 'aaron', 'HOSTNAME': 'ubuntu', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera_msgs/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_tensor_list_interfaces/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_pointcloud_interfaces/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nova_interfaces/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nitros_bridge_interfaces/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_bi3d_interfaces/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_apriltag_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/lib/aarch64-linux-gnu/tegra/weston:/usr/lib/aarch64-linux-gnu/tegra-egl:/usr/local/cuda-12.2/targets/aarch64-linux/lib:/usr/lib/aarch64-linux-gnu/tegra:/opt/nvidia/vpi3/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/aarch64-linux-gnu-host:/opt/tritonserver/lib', 'HOME': '/home/admin', 'OLDPWD': '/workspaces/isaac_ros-dev', 'NV_LIBCUBLAS_DEV_VERSION': '12.2.5.6-1', 'ROS_PYTHON_VERSION': '3', 'USER_UID': '1000', 'NV_LIBNPP_PACKAGE': 'libnpp-12-2=12.2.1.4-1', 'CUDA_VERSION': '12.2.12', 'COLCON_PREFIX_PATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/install', 'ROS_DISTRO': 'humble', 'NV_LIBCUBLAS_PACKAGE_NAME': 'libcublas-12-2', 'NVIDIA_REQUIRE_CUDA': 'cuda>=12.2', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NV_LIBCUSPARSE_VERSION': '12.1.2.141-1', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PACKAGE': 'py_perception', 'NV_CUDA_LIB_VERSION': '12.2.12-1', 'NV_NVML_DEV_VERSION': '12.2.140-1', 'USERNAME': 'admin', 'NV_LIBNPP_DEV_PACKAGE': 'libnpp-dev-12-2=12.2.1.4-1', 'TERM': 'xterm', 'ISAAC_ROS_WS': '/workspaces/isaac_ros-dev', 'NV_CUDA_CUDART_VERSION': '12.2.140-1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/admin/.local/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/src/tensorrt/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/nvidia/tao', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/usr/local/share/middleware_profiles/rtps_udp_profile.xml', 'NV_LIBCUBLAS_DEV_PACKAGE_NAME': 'libcublas-dev-12-2', 'NV_LIBCUBLAS_PACKAGE': 'libcublas-12-2=12.2.5.6-1', 'NVARCH': 'arm64', 'NV_LIBCUSPARSE_DEV_VERSION': '12.1.2.141-1', 'DISPLAY': ':1', 'NVIDIA_PRODUCT_NAME': 'CUDA', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'NV_CUDA_CUDART_DEV_VERSION': '12.2.140-1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/humble', 'AMENT_PREFIX_PATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_description:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera_msgs:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_tensor_list_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_pointcloud_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nova_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nitros_bridge_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_bi3d_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_apriltag_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar:/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'TRT_INCLUDE_PATH': '/usr/include/aarch64-linux-gnu', 'NV_LIBCUBLAS_DEV_PACKAGE': 'libcublas-dev-12-2=12.2.5.6-1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS': 'base-only', 'NV_NVTX_VERSION': '12.2.140-1', 'NV_LIBNPP_VERSION': '12.2.1.4-1', 'PWD': '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception', 'PYTHONPATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_tensor_list_interfaces/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_pointcloud_interfaces/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nova_interfaces/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nitros_bridge_interfaces/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_launch_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils/lib/python3.10/site-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_bi3d_interfaces/local/lib/python3.10/dist-packages:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_apriltag_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'USER_GID': '1000', 'COLCON': '1', 'NV_LIBNPP_DEV_VERSION': '12.2.1.4-1', 'CMAKE_PREFIX_PATH': '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_description:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/orbbec_camera_msgs:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_tensor_list_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_pointcloud_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nova_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_nitros_bridge_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_bi3d_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_apriltag_interfaces:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar', 'TRT_LIB_PATH': '/usr/lib/aarch64-linux-gnu'}, 'shell': False}
+[2.413431] (-) TimerEvent: {}
+[2.514549] (-) TimerEvent: {}
+[2.615008] (-) TimerEvent: {}
+[2.715468] (-) TimerEvent: {}
+[2.815942] (-) TimerEvent: {}
+[2.916415] (-) TimerEvent: {}
+[3.016851] (-) TimerEvent: {}
+[3.117373] (-) TimerEvent: {}
+[3.217912] (-) TimerEvent: {}
+[3.318400] (-) TimerEvent: {}
+[3.332581] (py_perception) StdoutLine: {'line': b'running egg_info\n'}
+[3.368365] (py_perception) StdoutLine: {'line': b'writing ../build/py_perception/py_perception.egg-info/PKG-INFO\n'}
+[3.369337] (py_perception) StdoutLine: {'line': b'writing dependency_links to ../build/py_perception/py_perception.egg-info/dependency_links.txt\n'}
+[3.369818] (py_perception) StdoutLine: {'line': b'writing entry points to ../build/py_perception/py_perception.egg-info/entry_points.txt\n'}
+[3.370112] (py_perception) StdoutLine: {'line': b'writing requirements to ../build/py_perception/py_perception.egg-info/requires.txt\n'}
+[3.370328] (py_perception) StdoutLine: {'line': b'writing top-level names to ../build/py_perception/py_perception.egg-info/top_level.txt\n'}
+[3.418509] (-) TimerEvent: {}
+[3.519039] (-) TimerEvent: {}
+[3.619777] (-) TimerEvent: {}
+[3.720538] (-) TimerEvent: {}
+[3.821286] (-) TimerEvent: {}
+[3.921969] (-) TimerEvent: {}
+[4.022643] (-) TimerEvent: {}
+[4.123347] (-) TimerEvent: {}
+[4.224094] (-) TimerEvent: {}
+[4.324805] (-) TimerEvent: {}
+[4.425542] (-) TimerEvent: {}
+[4.528356] (-) TimerEvent: {}
+[4.628923] (-) TimerEvent: {}
+[4.729475] (-) TimerEvent: {}
+[4.830020] (-) TimerEvent: {}
+[4.930522] (-) TimerEvent: {}
+[4.971725] (py_perception) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.973254] (py_perception) StdoutLine: {'line': b"writing manifest file '../build/py_perception/py_perception.egg-info/SOURCES.txt'\n"}
+[4.973625] (py_perception) StdoutLine: {'line': b'running build\n'}
+[4.973866] (py_perception) StdoutLine: {'line': b'running build_py\n'}
+[4.974245] (py_perception) StdoutLine: {'line': b'copying py_perception/map_gen.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build/lib/py_perception\n'}
+[4.975360] (py_perception) StdoutLine: {'line': b'running install\n'}
+[4.986685] (py_perception) StdoutLine: {'line': b'running install_lib\n'}
+[5.026873] (py_perception) StdoutLine: {'line': b'copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build/lib/py_perception/map_gen.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception\n'}
+[5.028240] (py_perception) StdoutLine: {'line': b'byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception/map_gen.py to map_gen.cpython-310.pyc\n'}
+[5.030664] (-) TimerEvent: {}
+[5.032891] (py_perception) StdoutLine: {'line': b'running install_data\n'}
+[5.033265] (py_perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.067698] (py_perception) StdoutLine: {'line': b"removing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.068211] (py_perception) StdoutLine: {'line': b'Copying ../build/py_perception/py_perception.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception-0.0.0-py3.10.egg-info\n'}
+[5.069657] (py_perception) StdoutLine: {'line': b'running install_scripts\n'}
+[5.130780] (-) TimerEvent: {}
+[5.200690] (py_perception) StdoutLine: {'line': b'Installing fast_depth script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception\n'}
+[5.201157] (py_perception) StdoutLine: {'line': b'Installing map_gen script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception\n'}
+[5.201315] (py_perception) StdoutLine: {'line': b'Installing map_gen_old script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception\n'}
+[5.201844] (py_perception) StdoutLine: {'line': b"writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/install.log'\n"}
+[5.230961] (-) TimerEvent: {}
+[5.331737] (-) TimerEvent: {}
+[5.352153] (py_perception) CommandEnded: {'returncode': 0}
+[5.398945] (py_perception) JobEnded: {'identifier': 'py_perception', 'rc': 0}
+[5.402666] (-) EventReactorShutdown: {}

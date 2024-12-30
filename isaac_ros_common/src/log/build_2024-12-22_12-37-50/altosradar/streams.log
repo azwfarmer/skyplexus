@@ -1,0 +1,185 @@
+[0.924s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar
+[1.891s] -- The C compiler identification is GNU 11.4.0
+[1.892s] -- The CXX compiler identification is GNU 11.4.0
+[1.892s] -- Detecting C compiler ABI info
+[1.892s] -- Detecting C compiler ABI info - done
+[1.892s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.892s] -- Detecting C compile features
+[1.892s] -- Detecting C compile features - done
+[1.892s] -- Detecting CXX compiler ABI info
+[1.892s] -- Detecting CXX compiler ABI info - done
+[1.892s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.892s] -- Detecting CXX compile features
+[1.892s] -- Detecting CXX compile features - done
+[1.892s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.930s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.082s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.171s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.243s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.259s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.271s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.321s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.473s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.527s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[3.617s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.619s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.860s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.930s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.063s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.083s] -- Looking for pthread.h
+[4.269s] -- Looking for pthread.h - found
+[4.270s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.461s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.463s] -- Found Threads: TRUE  
+[4.594s] -- Checking for module 'eigen3'
+[4.680s] --   Found eigen3, version 3.4.0
+[4.788s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[4.789s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.893s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[4.950s] -- Checking for module 'flann'
+[5.020s] --   Found flann, version 1.9.1
+[5.185s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[5.185s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[5.248s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[5.261s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[5.753s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[5.753s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[5.758s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[5.779s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[5.806s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") 
+[5.882s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[6.482s] -- Found X11: /usr/include   
+[6.483s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[6.892s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[6.893s] -- Looking for gethostbyname
+[7.394s] -- Looking for gethostbyname - found
+[7.394s] -- Looking for connect
+[7.850s] -- Looking for connect - found
+[7.851s] -- Looking for remove
+[8.447s] -- Looking for remove - found
+[8.447s] -- Looking for shmat
+[9.223s] -- Looking for shmat - found
+[9.223s] -- Looking for IceConnectionNumber in ICE
+[9.967s] -- Looking for IceConnectionNumber in ICE - found
+[10.931s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") 
+[10.935s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[10.955s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") 
+[10.985s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") 
+[11.364s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[11.409s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  
+[11.428s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[11.521s] -- Found utf8cpp: /usr/include/utf8cpp  
+[12.509s] -- Checking for module 'libusb-1.0'
+[12.773s] --   Found libusb-1.0, version 1.0.25
+[13.373s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[13.377s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[13.377s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.126s] -- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[14.126s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[14.127s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[15.158s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[15.227s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.246s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[15.905s] -- Found Qhull version 8.0.2
+[16.448s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[17.522s] -- looking for PCL_COMMON
+[17.524s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[17.524s] -- looking for PCL_KDTREE
+[17.525s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[17.525s] -- looking for PCL_OCTREE
+[17.526s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[17.559s] -- looking for PCL_SEARCH
+[17.561s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[17.561s] -- looking for PCL_SAMPLE_CONSENSUS
+[17.563s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[17.563s] -- looking for PCL_FILTERS
+[17.564s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[17.565s] -- looking for PCL_2D
+[17.565s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[17.565s] -- looking for PCL_GEOMETRY
+[17.566s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[17.566s] -- looking for PCL_IO
+[17.592s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[17.593s] -- looking for PCL_FEATURES
+[17.595s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[17.595s] -- looking for PCL_ML
+[17.597s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[17.597s] -- looking for PCL_SEGMENTATION
+[17.598s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[17.627s] -- looking for PCL_VISUALIZATION
+[17.629s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[17.629s] -- looking for PCL_SURFACE
+[17.631s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[17.631s] -- looking for PCL_REGISTRATION
+[17.633s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[17.633s] -- looking for PCL_KEYPOINTS
+[17.659s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[17.662s] -- looking for PCL_TRACKING
+[17.673s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[17.684s] -- looking for PCL_RECOGNITION
+[17.693s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[17.694s] -- looking for PCL_STEREO
+[17.697s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[17.698s] -- looking for PCL_APPS
+[17.700s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[17.729s] -- looking for PCL_IN_HAND_SCANNER
+[17.729s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[17.729s] -- looking for PCL_MODELER
+[17.730s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[17.730s] -- looking for PCL_POINT_CLOUD_EDITOR
+[17.739s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[17.740s] -- looking for PCL_OUTOFCORE
+[17.742s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[17.752s] -- looking for PCL_PEOPLE
+[17.761s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[17.763s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[17.795s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[17.965s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.410s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.410s] -- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/include
+[18.411s] -- Configured cppcheck exclude dirs and/or files: 
+[18.411s] -- Added test 'flake8' to check Python code syntax and style conventions
+[18.421s] -- Added test 'lint_cmake' to check CMake code style
+[18.422s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[18.437s] -- Added test 'uncrustify' to check C / C++ code style
+[18.440s] -- Configured uncrustify additional arguments: 
+[18.442s] -- Added test 'xmllint' to check XML markup files
+[18.446s] -- Configuring done
+[18.745s] -- Generating done
+[18.820s] -- Build files have been written to: /workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar
+[19.056s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar
+[19.057s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar -- -j12 -l12
+[22.847s] [ 50%] [32mBuilding CXX object CMakeFiles/altosRadarParse.dir/src/altosRadarParse.cpp.o[0m
+[31.930s] [01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[31.930s] [01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:164:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KobjectCntFrame[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[31.930s]   164 |     int [01;35m[KobjectCntFrame[m[K = 0;
+[31.930s]       |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[33.981s] [01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:64:10:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Ksize_t fread(void*, size_t, size_t, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+[33.981s]    64 |     [01;35m[Kfread(rcsBuf, 1201, sizeof(float), fp_rcs)[m[K;
+[33.981s]       |     [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[40.422s] [100%] [32m[1mLinking CXX executable altosRadarParse[0m
+[40.998s] [100%] Built target altosRadarParse
+[41.017s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar -- -j12 -l12
+[41.020s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar
+[41.031s] -- Install configuration: "Release"
+[41.032s] -- Execute custom install script
+[41.032s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/lib/altosradar/altosRadarParse
+[41.046s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar//launch/rviz_launch.py
+[41.062s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/ament_index/resource_index/package_run_dependencies/altosradar
+[41.077s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/ament_index/resource_index/parent_prefix_path/altosradar
+[41.094s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/environment/ament_prefix_path.sh
+[41.111s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/environment/ament_prefix_path.dsv
+[41.126s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/environment/path.sh
+[41.141s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/environment/path.dsv
+[41.158s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/local_setup.bash
+[41.172s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/local_setup.sh
+[41.188s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/local_setup.zsh
+[41.201s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/local_setup.dsv
+[41.223s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/package.dsv
+[41.233s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/ament_index/resource_index/packages/altosradar
+[41.247s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/cmake/ament_cmake_export_include_directories-extras.cmake
+[41.262s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/cmake/altosradarConfig.cmake
+[41.279s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/cmake/altosradarConfig-version.cmake
+[41.297s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/altosradar/share/altosradar/package.xml
+[41.315s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/altosradar

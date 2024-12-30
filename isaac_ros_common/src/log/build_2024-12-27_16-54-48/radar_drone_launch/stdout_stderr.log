@@ -1,0 +1,32 @@
+running develop
+Removing /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar-drone-launch.egg-link (link to .)
+running egg_info
+writing ../build/radar_drone_launch/radar_drone_launch.egg-info/PKG-INFO
+writing dependency_links to ../build/radar_drone_launch/radar_drone_launch.egg-info/dependency_links.txt
+writing requirements to ../build/radar_drone_launch/radar_drone_launch.egg-info/requires.txt
+writing top-level names to ../build/radar_drone_launch/radar_drone_launch.egg-info/top_level.txt
+adding license file 'LICENSE'
+writing manifest file '../build/radar_drone_launch/radar_drone_launch.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch
+copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build/lib/radar_drone_launch/__init__.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch
+byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/radar_drone_launch -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/ament_index/resource_index/packages
+copying package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch
+copying launch/dronecam.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/replay.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/mapgenold.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/tf_visualizer.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/apm_altos.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/mavros_only.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/new.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/mapgen.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+copying launch/img_proc.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+running install_egg_info
+Copying ../build/radar_drone_launch/radar_drone_launch.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar_drone_launch-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/install.log'

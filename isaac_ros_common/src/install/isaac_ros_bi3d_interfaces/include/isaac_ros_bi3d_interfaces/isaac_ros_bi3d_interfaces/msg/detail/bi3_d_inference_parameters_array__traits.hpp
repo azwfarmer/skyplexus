@@ -1,0 +1,1 @@
+/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_bi3d_interfaces/rosidl_generator_cpp/isaac_ros_bi3d_interfaces/msg/detail/bi3_d_inference_parameters_array__traits.hpp

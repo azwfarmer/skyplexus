@@ -1,0 +1,26 @@
+[2.305s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/py_perception': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/py_perception build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/install.log --single-version-externally-managed install_data
+[3.212s] running egg_info
+[3.245s] writing ../build/py_perception/py_perception.egg-info/PKG-INFO
+[3.245s] writing dependency_links to ../build/py_perception/py_perception.egg-info/dependency_links.txt
+[3.246s] writing entry points to ../build/py_perception/py_perception.egg-info/entry_points.txt
+[3.246s] writing requirements to ../build/py_perception/py_perception.egg-info/requires.txt
+[3.246s] writing top-level names to ../build/py_perception/py_perception.egg-info/top_level.txt
+[4.783s] adding license file 'LICENSE'
+[4.784s] writing manifest file '../build/py_perception/py_perception.egg-info/SOURCES.txt'
+[4.785s] running build
+[4.785s] running build_py
+[4.785s] copying py_perception/map_gen.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build/lib/py_perception
+[4.787s] running install
+[4.800s] running install_lib
+[4.842s] copying /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build/lib/py_perception/map_gen.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception
+[4.844s] byte-compiling /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception/map_gen.py to map_gen.cpython-310.pyc
+[4.850s] running install_data
+[4.850s] running install_egg_info
+[4.886s] removing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception-0.0.0-py3.10.egg-info' (and everything under it)
+[4.886s] Copying ../build/py_perception/py_perception.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py_perception-0.0.0-py3.10.egg-info
+[4.888s] running install_scripts
+[5.017s] Installing fast_depth script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[5.017s] Installing map_gen script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[5.017s] Installing map_gen_old script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[5.018s] writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/install.log'
+[5.139s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/py_perception' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/py_perception build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/install.log --single-version-externally-managed install_data

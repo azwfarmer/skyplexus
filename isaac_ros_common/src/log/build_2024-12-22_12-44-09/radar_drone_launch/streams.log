@@ -1,0 +1,15 @@
+[2.270s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build --no-deps symlink_data
+[3.124s] running develop
+[3.631s] running egg_info
+[3.664s] writing radar_drone_launch.egg-info/PKG-INFO
+[3.665s] writing dependency_links to radar_drone_launch.egg-info/dependency_links.txt
+[3.665s] writing requirements to radar_drone_launch.egg-info/requires.txt
+[3.665s] writing top-level names to radar_drone_launch.egg-info/top_level.txt
+[5.491s] reading manifest file 'radar_drone_launch.egg-info/SOURCES.txt'
+[5.492s] writing manifest file 'radar_drone_launch.egg-info/SOURCES.txt'
+[5.661s] running build_ext
+[5.661s] Creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar-drone-launch.egg-link (link to .)
+[5.662s] 
+[5.663s] Installed /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch
+[5.663s] running symlink_data
+[5.838s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/build --no-deps symlink_data

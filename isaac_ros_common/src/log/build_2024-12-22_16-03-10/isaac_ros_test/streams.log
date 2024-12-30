@@ -1,0 +1,18 @@
+[4.330s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_test': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/isaac_ros_test build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log --single-version-externally-managed install_data
+[5.440s] running egg_info
+[5.440s] writing ../build/isaac_ros_test/isaac_ros_test.egg-info/PKG-INFO
+[5.440s] writing dependency_links to ../build/isaac_ros_test/isaac_ros_test.egg-info/dependency_links.txt
+[5.447s] writing requirements to ../build/isaac_ros_test/isaac_ros_test.egg-info/requires.txt
+[5.448s] writing top-level names to ../build/isaac_ros_test/isaac_ros_test.egg-info/top_level.txt
+[7.436s] writing manifest file '../build/isaac_ros_test/isaac_ros_test.egg-info/SOURCES.txt'
+[7.436s] running build
+[7.437s] running build_py
+[7.438s] running install
+[7.448s] running install_lib
+[7.486s] running install_data
+[7.487s] running install_egg_info
+[7.521s] removing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test-0.9.0-py3.10.egg-info' (and everything under it)
+[7.521s] Copying ../build/isaac_ros_test/isaac_ros_test.egg-info to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac_ros_test-0.9.0-py3.10.egg-info
+[7.522s] running install_scripts
+[7.654s] writing list of installed files to '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log'
+[8.384s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_test' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/isaac_ros_test build --build-base /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build install --record /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/install.log --single-version-externally-managed install_data

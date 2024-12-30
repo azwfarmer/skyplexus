@@ -1,0 +1,138 @@
+[1.890s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros -- -j12 -l12
+[2.019s] [35m[1mConsolidate compiler generated dependencies of target os_cloud[0m
+[2.029s] [35m[1mConsolidate compiler generated dependencies of target os_image[0m
+[2.030s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[2.030s] [35m[1mConsolidate compiler generated dependencies of target os_replay[0m
+[2.046s] [35m[1mConsolidate compiler generated dependencies of target os_sensor[0m
+[2.046s] [35m[1mConsolidate compiler generated dependencies of target os_driver[0m
+[2.046s] [  3%] Built target os_cloud
+[2.047s] [  7%] Built target os_image
+[2.048s] [ 10%] Built target gtest
+[2.048s] [ 14%] Built target os_replay
+[2.048s] [34m[1mGenerating build info header[0m
+[2.059s] [ 21%] Built target os_driver
+[2.061s] [ 21%] Built target os_sensor
+[2.066s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[2.097s] [ 25%] Built target gtest_main
+[2.132s] [ 25%] Built target ouster_generate_header
+[2.158s] [35m[1mConsolidate compiler generated dependencies of target ouster_client[0m
+[2.220s] [ 52%] Built target ouster_client
+[2.244s] [35m[1mConsolidate compiler generated dependencies of target ouster_ros_library[0m
+[2.281s] [ 56%] Built target ouster_ros_library
+[2.305s] [35m[1mConsolidate compiler generated dependencies of target os_replay_component[0m
+[2.305s] [35m[1mConsolidate compiler generated dependencies of target os_image_component[0m
+[2.306s] [35m[1mConsolidate compiler generated dependencies of target os_cloud_component[0m
+[2.306s] [35m[1mConsolidate compiler generated dependencies of target os_sensor_component[0m
+[2.307s] [35m[1mConsolidate compiler generated dependencies of target os_driver_component[0m
+[2.323s] [35m[1mConsolidate compiler generated dependencies of target ouster_ros_test[0m
+[2.364s] [ 61%] Built target os_replay_component
+[2.377s] [ 69%] Built target os_image_component
+[2.377s] [ 72%] Built target os_sensor_component
+[2.382s] [ 78%] Built target os_cloud_component
+[2.383s] [ 85%] Built target os_driver_component
+[2.407s] [100%] Built target ouster_ros_test
+[2.428s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros -- -j12 -l12
+[2.434s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros
+[2.452s] -- Install configuration: "Release"
+[2.452s] -- Execute custom install script
+[2.453s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/build.h
+[2.454s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/buffered_udp_source.h
+[2.454s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/client.h
+[2.454s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/defaults.h
+[2.454s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/image_processing.h
+[2.454s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/cartesian.h
+[2.455s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/lidar_scan_impl.h
+[2.455s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/packet_writer.h
+[2.455s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/profile_extension.h
+[2.455s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/lidar_scan.h
+[2.455s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/sensor_http.h
+[2.456s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/types.h
+[2.456s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/util.h
+[2.456s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/version.h
+[2.456s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/optional-lite/nonstd/optional.hpp
+[2.456s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/cmake/OusterSDK/OusterSDKConfig.cmake
+[2.457s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/cmake/OusterSDK/OusterSDKConfigVersion.cmake
+[2.457s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/LICENSE
+[2.457s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/LICENSE-bin
+[2.459s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_sensor
+[2.459s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_replay
+[2.459s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_cloud
+[2.459s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_image
+[2.459s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_driver
+[2.460s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libouster_ros_library.so
+[2.460s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_sensor_component.so
+[2.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_replay_component.so
+[2.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_cloud_component.so
+[2.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_image_component.so
+[2.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_driver_component.so
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/common_point_types.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_point.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_processing_node_base.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_ros.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_sensor_node_base.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/sensor_point_types.h
+[2.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/visibility_control.h
+[2.463s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/optional-lite/nonstd/optional.hpp
+[2.463s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/buffered_udp_source.h
+[2.463s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/client.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/defaults.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/image_processing.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/cartesian.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/lidar_scan_impl.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/packet_writer.h
+[2.464s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/profile_extension.h
+[2.465s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/lidar_scan.h
+[2.465s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/sensor_http.h
+[2.465s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/types.h
+[2.465s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/util.h
+[2.466s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/version.h
+[2.466s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/optional-lite/nonstd/optional.hpp
+[2.466s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/indexed_pcap_reader.h
+[2.466s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/os_pcap.h
+[2.467s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/pcap.h
+[2.467s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/LICENSE
+[2.468s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/__pycache__/driver.launch.cpython-310.pyc
+[2.468s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/driver.launch.py
+[2.468s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/driver_launch.py
+[2.468s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/record.composite.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/record.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay.composite.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay_pcap.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/rviz.launch.py
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/rviz.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.composite.launch.py
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.composite.launch.xml
+[2.469s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.independent.launch.py
+[2.470s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.independent.launch.xml
+[2.470s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.launch.xml
+[2.470s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor_mtp.launch.xml
+[2.470s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/community_driver.rviz
+[2.471s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/community_driver_config.yaml
+[2.474s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/driver_params.yaml
+[2.474s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/metadata-qos-override.yaml
+[2.474s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/os_sensor_cloud_image_params.yaml
+[2.474s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/viz-reliable.rviz
+[2.474s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/viz.rviz
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/library_path.sh
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/library_path.dsv
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/package_run_dependencies/ouster_ros
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/parent_prefix_path/ouster_ros
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/ament_prefix_path.sh
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/ament_prefix_path.dsv
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/path.sh
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/path.dsv
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.bash
+[2.475s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.sh
+[2.476s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.zsh
+[2.476s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.dsv
+[2.476s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/package.dsv
+[2.489s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/packages/ouster_ros
+[2.489s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/rclcpp_components/ouster_ros
+[2.489s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.489s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.490s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[2.490s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ouster_rosConfig.cmake
+[2.490s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ouster_rosConfig-version.cmake
+[2.490s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/package.xml
+[2.494s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros

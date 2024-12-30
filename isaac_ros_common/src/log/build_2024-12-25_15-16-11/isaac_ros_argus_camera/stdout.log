@@ -1,0 +1,97 @@
+-- Architecture: aarch64
+-- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Loading isaac_ros_common extras
+-- CMAKE_BUILD_TYPE: Release
+-- Loading isaac_ros_common extras (modules)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Loading isaac_ros_gxf extras
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera
+[35m[1mConsolidate compiler generated dependencies of target argus_nitros_context[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/argus_nitros_context.dir/src/argus_nitros_context.cpp.o[0m
+[ 25%] [32m[1mLinking CXX shared library libargus_nitros_context.so[0m
+[ 25%] Built target argus_nitros_context
+[35m[1mConsolidate compiler generated dependencies of target base_node[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/base_node.dir/src/argus_camera_node.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libbase_node.so[0m
+[ 50%] Built target base_node
+[35m[1mConsolidate compiler generated dependencies of target mono_node[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/mono_node.dir/src/argus_camera_mono_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libmono_node.so[0m
+[ 75%] Built target mono_node
+[35m[1mConsolidate compiler generated dependencies of target stereo_node[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/stereo_node.dir/src/argus_camera_stereo_node.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libstereo_node.so[0m
+[100%] Built target stereo_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/include/isaac_ros_argus_camera/argus_camera_mono_node.hpp
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/include/isaac_ros_argus_camera/argus_camera_node.hpp
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/include/isaac_ros_argus_camera/argus_camera_stereo_node.hpp
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/include/isaac_ros_argus_camera/argus_nitros_context.hpp
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/library_path.sh
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/library_path.dsv
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/lib/libargus_nitros_context.so
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/lib/libbase_node.so
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/lib/libmono_node.so
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/lib/libstereo_node.so
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/config/argus_camera_mono_node.yaml
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/config/argus_camera_stereo_node.yaml
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/config/argus_nitros_context_graph.yaml
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/config/namespace_injector_rule.yaml
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/launch/isaac_ros_argus_camera_depth_core.launch.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/launch/isaac_ros_argus_camera_mono.launch.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/launch/isaac_ros_argus_camera_mono_core.launch.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/launch/isaac_ros_argus_camera_stereo.launch.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/launch/isaac_ros_argus_camera_stereo_core.launch.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/test/isaac_ros_argus_camera_bench_test.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/test/isaac_ros_argus_camera_mono_test.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/test/isaac_ros_argus_camera_stereo_oss_rectify_compare.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/test/isaac_ros_argus_camera_stereo_test.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/test/isaac_ros_argus_camera_stereo_wide_fov_test.py
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/ament_index/resource_index/package_run_dependencies/isaac_ros_argus_camera
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/ament_index/resource_index/parent_prefix_path/isaac_ros_argus_camera
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/path.sh
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/environment/path.dsv
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/local_setup.bash
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/local_setup.sh
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/local_setup.zsh
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/local_setup.dsv
+-- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/package.dsv
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/ament_index/resource_index/packages/isaac_ros_argus_camera
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/ament_index/resource_index/rclcpp_components/isaac_ros_argus_camera
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/cmake/isaac_ros_argus_cameraConfig.cmake
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/cmake/isaac_ros_argus_cameraConfig-version.cmake
+-- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera/share/isaac_ros_argus_camera/package.xml

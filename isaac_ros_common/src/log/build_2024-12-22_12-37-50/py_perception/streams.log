@@ -1,0 +1,26 @@
+[3.079s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build --no-deps symlink_data
+[4.043s] running develop
+[4.659s] running egg_info
+[4.659s] creating py_perception.egg-info
+[4.699s] writing py_perception.egg-info/PKG-INFO
+[4.699s] writing dependency_links to py_perception.egg-info/dependency_links.txt
+[4.699s] writing entry points to py_perception.egg-info/entry_points.txt
+[4.699s] writing requirements to py_perception.egg-info/requires.txt
+[4.699s] writing top-level names to py_perception.egg-info/top_level.txt
+[4.699s] writing manifest file 'py_perception.egg-info/SOURCES.txt'
+[7.284s] reading manifest file 'py_perception.egg-info/SOURCES.txt'
+[7.287s] writing manifest file 'py_perception.egg-info/SOURCES.txt'
+[7.433s] running build_ext
+[7.433s] Creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages/py-perception.egg-link (link to .)
+[7.436s] Installing fast_depth script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[7.436s] Installing map_gen script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[7.436s] Installing map_gen_old script to /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/py_perception
+[7.437s] 
+[7.437s] Installed /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception
+[7.437s] running symlink_data
+[7.438s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/share/ament_index
+[7.438s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/share/ament_index/resource_index
+[7.438s] creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/share/ament_index/resource_index/packages
+[7.438s] symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/resource/py_perception -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/share/ament_index/resource_index/packages
+[7.438s] symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/share/py_perception
+[7.656s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/py_perception/build --no-deps symlink_data

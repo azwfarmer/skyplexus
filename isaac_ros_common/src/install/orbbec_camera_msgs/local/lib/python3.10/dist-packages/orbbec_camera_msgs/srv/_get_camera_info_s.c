@@ -1,0 +1,1 @@
+/workspaces/isaac_ros-dev/isaac_ros_common/src/build/orbbec_camera_msgs/rosidl_generator_py/orbbec_camera_msgs/srv/_get_camera_info_s.c

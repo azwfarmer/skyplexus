@@ -1,0 +1,1 @@
+/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_bi3d_interfaces/ament_cmake_environment_hooks/local_setup.bash

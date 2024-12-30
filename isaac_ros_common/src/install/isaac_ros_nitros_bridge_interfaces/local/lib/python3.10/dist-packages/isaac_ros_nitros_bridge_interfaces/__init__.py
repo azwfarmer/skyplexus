@@ -1,0 +1,1 @@
+/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_nitros_bridge_interfaces/rosidl_generator_py/isaac_ros_nitros_bridge_interfaces/__init__.py

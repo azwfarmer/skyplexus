@@ -58,21 +58,22 @@
       - cellular_status #consider later
       - wind
       - wind_estimation
-    plugin_allowlist:
-      - global_position
-      - altitude
-      - imu
-      - local_position
-      - nav_controller_output
-      - sys
-      - time
       - terrain
-      - odometry
-      - odom
-      - gpsstatus
-      - gps_rtk
       - esc_telemetry
       - esc_status
-      - distance_sensor
       - adsb
       - vibration
+      - nav_controller_output
+      - gpsstatus
+      - gps_rtk
+
+    plugin_allowlist:
+      - global_position
+      - imu
+      - local_position
+      - sys
+      - time
+      - odometry
+      - odom
+      - distance_sensor
+

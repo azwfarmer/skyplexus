@@ -3,18 +3,18 @@
 import rosbag2_py
 from rclpy.serialization import deserialize_message, serialize_message
 from rosidl_runtime_py.utilities import get_message
-import math
+
 
 reader = rosbag2_py.SequentialReader()
 reader.open(
-    rosbag2_py.StorageOptions(uri='rosbag2_2024_10_05-18_01_21', storage_id='sqlite3'),
+    rosbag2_py.StorageOptions(uri='rosbag2_2024_12_27-11_56_09', storage_id='sqlite3'),
     rosbag2_py.ConverterOptions(input_serialization_format='cdr',
                                 output_serialization_format='cdr')
 )
 
 writer = rosbag2_py.SequentialWriter()
 writer.open(
-    rosbag2_py.StorageOptions(uri='edited_rosbag2_2024_10_05-18_01_21', storage_id='sqlite3'),
+    rosbag2_py.StorageOptions(uri='clean_rosbag2_2024_12_27-11_56_09', storage_id='sqlite3'),
     rosbag2_py.ConverterOptions(input_serialization_format='cdr',
                                 output_serialization_format='cdr')
 )
@@ -36,11 +36,18 @@ while reader.has_next():
         for transform in msg.transforms:
             if transform.header.frame_id == 'map' and transform.child_frame_id == 'base_link':
                 if(abs(transform.transform.translation.x) > 1e4 or abs(transform.transform.translation.y) > 1e4 or abs(transform.transform.translation.z) > 1e4):
-                    print("problem discovered")
                     filter_out = True
                     break
+    elif topic=='/tf_static':
+        filter_out = True
                 
     if not filter_out:
-        writer.create_topic(rosbag2_py.TopicMetadata(name=topic, type=typename(topic), serialization_format="cdr"))
+        writer.create_topic(
+                rosbag2_py.TopicMetadata(
+                    name=topic, 
+                    type=typename(topic), 
+                    serialization_format="cdr"
+                )
+            )
         writer.write(topic, data, timestamp)
 

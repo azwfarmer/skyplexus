@@ -66,8 +66,8 @@ RUN echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 
 RUN pip install ouster-sdk
 
-RUN apt-get update &&  apt-get install -y \
 RUN --mount=type=cache,target=/var/cache/apt \
+    apt-get update && \
     add-apt-repository ppa:nuandllc/bladerf && \
     add-apt-repository ppa:borglab/gtsam-release-4.1 && \
     apt-get update && apt-get install -y ros-humble-isaac-ros-jetson-stats \
@@ -134,6 +134,15 @@ RUN --mount=type=cache,target=/var/cache/apt \
     python3-libnvinfer-dev \
     eog \
     nvidia-tensorrt-dev \
+    libgflags-dev nlohmann-json3-dev  \
+    ros-humble-image-transport \
+    ros-humble-image-publisher \
+    ros-humble-camera-info-manager \
+    ros-humble-diagnostic-updater \
+    ros-humble-diagnostic-msgs \
+    ros-humble-statistics-msgs \
+    ros-humble-backward-ros \
+    libdw-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ptp4l.conf /etc/linuxptp/ptp4l.conf
@@ -233,7 +242,10 @@ RUN pip3 install PyYAML \
 #     cmake .. && make -j$(nproc) && make install && \
 #     cd ../../ && rm -rf libtins
 
-
+WORKDIR /
+RUN git clone https://github.com/azinke/mmwave.git && \
+    cd /mmwave && \
+    sudo make install
 
 RUN echo '${USERNAME} ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 

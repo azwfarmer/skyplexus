@@ -1,0 +1,6 @@
+./run_timesync.sh
+./run_preptp.sh
+./run_ptp.sh
+sudo chmod 666 /dev/ttyTHS1
+colcon build --packages-select radar_drone_launch
+./run.sh

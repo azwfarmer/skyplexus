@@ -1,0 +1,23 @@
+[0.102s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception -- -j12 -l12
+[0.239s] [100%] Built target imu_orientation
+[2.101s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception -- -j12 -l12
+[2.107s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception
+[2.156s] -- Install configuration: "Release"
+[2.156s] -- Execute custom install script
+[2.156s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/lib/perception/imu_orientation
+[2.156s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/ament_index/resource_index/package_run_dependencies/perception
+[2.156s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/ament_index/resource_index/parent_prefix_path/perception
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/environment/ament_prefix_path.sh
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/environment/ament_prefix_path.dsv
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/environment/path.sh
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/environment/path.dsv
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/local_setup.bash
+[2.157s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/local_setup.sh
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/local_setup.zsh
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/local_setup.dsv
+[2.158s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/package.dsv
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/ament_index/resource_index/packages/perception
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/cmake/perceptionConfig.cmake
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/cmake/perceptionConfig-version.cmake
+[2.158s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/perception/share/perception/package.xml
+[2.270s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/perception

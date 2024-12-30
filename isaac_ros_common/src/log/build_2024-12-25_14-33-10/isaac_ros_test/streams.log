@@ -1,0 +1,17 @@
+[3.601s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build --no-deps symlink_data --force
+[4.729s] running develop
+[5.538s] running egg_info
+[5.588s] writing isaac_ros_test.egg-info/PKG-INFO
+[5.589s] writing dependency_links to isaac_ros_test.egg-info/dependency_links.txt
+[5.589s] writing requirements to isaac_ros_test.egg-info/requires.txt
+[5.589s] writing top-level names to isaac_ros_test.egg-info/top_level.txt
+[8.575s] reading manifest file 'isaac_ros_test.egg-info/SOURCES.txt'
+[8.582s] writing manifest file 'isaac_ros_test.egg-info/SOURCES.txt'
+[8.754s] running build_ext
+[8.755s] Creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages/isaac-ros-test.egg-link (link to .)
+[8.755s] 
+[8.755s] Installed /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test
+[8.756s] running symlink_data
+[8.756s] symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/resource/isaac_ros_test -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/share/ament_index/resource_index/packages
+[8.756s] symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/share/isaac_ros_test
+[9.067s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test' returned '0': PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test/build --no-deps symlink_data --force

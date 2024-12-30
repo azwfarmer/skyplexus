@@ -15,6 +15,7 @@
   <depend>image_publisher</depend>
   <depend>rclcpp_components</depend>
   <depend>cv_bridge</depend>
+  <depend>backward_ros</depend>
   <depend>camera_info_manager</depend>
   <depend>orbbec_camera_msgs</depend>
   <depend>builtin_interfaces</depend>
@@ -32,6 +33,7 @@
   <depend>libgflags-dev</depend>
   <depend>nlohmann-json-dev</depend>
   <depend>libgoogle-glog-dev</depend>
+  <depend>libdw-dev</depend>
   <export>
     <build_type>ament_cmake</build_type>
   </export>

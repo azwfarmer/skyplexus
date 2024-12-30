@@ -1,0 +1,3 @@
+[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera/src/argus_camera_mono_node.cpp:60:24:[m[K [01;35m[Kwarning: [m[Kexpected [error|warning|ignored|push|pop] after ‘[01m[K#pragma GCC diagnostic[m[K’ [[01;35m[K-Wpragmas[m[K]
+   60 | #pragma GCC diagnostic [01;35m[Kpopf[m[K
+      |                        [01;35m[K^~~~[m[K

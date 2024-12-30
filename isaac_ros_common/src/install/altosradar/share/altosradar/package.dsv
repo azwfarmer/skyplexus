@@ -1,0 +1,8 @@
+source;share/altosradar/hook/cmake_prefix_path.ps1
+source;share/altosradar/hook/cmake_prefix_path.dsv
+source;share/altosradar/hook/cmake_prefix_path.sh
+source;share/altosradar/local_setup.bash
+source;share/altosradar/local_setup.dsv
+source;share/altosradar/local_setup.ps1
+source;share/altosradar/local_setup.sh
+source;share/altosradar/local_setup.zsh

@@ -1,0 +1,1 @@
+/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera/include/isaac_ros_argus_camera/argus_camera_stereo_node.hpp

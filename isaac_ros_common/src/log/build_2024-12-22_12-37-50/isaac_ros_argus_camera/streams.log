@@ -1,0 +1,78 @@
+[0.026s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/lib:${LD_LIBRARY_PATH} PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/bin:${PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera
+[0.112s] -- The C compiler identification is GNU 11.4.0
+[0.196s] -- The CXX compiler identification is GNU 11.4.0
+[0.208s] -- Detecting C compiler ABI info
+[0.333s] -- Detecting C compiler ABI info - done
+[0.343s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.343s] -- Detecting C compile features
+[0.343s] -- Detecting C compile features - done
+[0.350s] -- Detecting CXX compiler ABI info
+[0.485s] -- Detecting CXX compiler ABI info - done
+[0.501s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.502s] -- Detecting CXX compile features
+[0.505s] -- Detecting CXX compile features - done
+[0.513s] -- Architecture: aarch64
+[0.516s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[1.886s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.999s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.167s] -- Loading isaac_ros_common extras
+[2.167s] -- CMAKE_BUILD_TYPE: Release
+[2.197s] -- Looking for pthread.h
+[2.319s] -- Looking for pthread.h - found
+[2.319s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.450s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.451s] -- Found Threads: TRUE  
+[2.486s] -- Found CUDA: /usr/local/cuda (found version "12.2") 
+[2.487s] -- Loading isaac_ros_common extras (modules)
+[2.560s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.570s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.585s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.606s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.716s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.721s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.901s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.958s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.040s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.376s] -- Loading isaac_ros_gxf extras
+[4.888s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.955s] -- Found launch_testing_ament_cmake: 1.0.6 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[4.958s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.001s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.008s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.008s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.008s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.008s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.055s] -- Found PythonExtra: .so  
+[5.071s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.074s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.076s] -- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera/include
+[5.076s] -- Configured cppcheck exclude dirs and/or files: 
+[5.079s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.079s] -- Configured cpplint exclude dirs and/or files: 
+[5.080s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.081s] -- Added test 'lint_cmake' to check CMake code style
+[5.082s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.085s] -- Added test 'uncrustify' to check C / C++ code style
+[5.085s] -- Configured uncrustify additional arguments: 
+[5.086s] -- Added test 'xmllint' to check XML markup files
+[5.092s] -- Configuring done
+[5.488s] -- Generating done
+[5.517s] -- Build files have been written to: /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera
+[5.543s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/lib:${LD_LIBRARY_PATH} PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/bin:${PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_argus_camera
+[5.546s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/gxf_isaac_camera_utils/lib:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/lib:${LD_LIBRARY_PATH} PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_common/bin:${PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/isaac_ros_argus_camera -- -j12 -l12
+[5.640s] [ 12%] [32mBuilding CXX object CMakeFiles/argus_nitros_context.dir/src/argus_nitros_context.cpp.o[0m
+[11.544s] [ 25%] [32m[1mLinking CXX shared library libargus_nitros_context.so[0m
+[12.885s] [ 25%] Built target argus_nitros_context
+[13.032s] [ 37%] [32mBuilding CXX object CMakeFiles/base_node.dir/src/argus_camera_node.cpp.o[0m
+[71.337s] [ 50%] [32m[1mLinking CXX shared library libbase_node.so[0m
+[72.925s] [ 50%] Built target base_node
+[73.056s] [ 62%] [32mBuilding CXX object CMakeFiles/mono_node.dir/src/argus_camera_mono_node.cpp.o[0m
+[81.406s] [01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/isaac_ros_argus_camera/isaac_ros_argus_camera/src/argus_camera_mono_node.cpp:60:24:[m[K [01;35m[Kwarning: [m[Kexpected [error|warning|ignored|push|pop] after ‘[01m[K#pragma GCC diagnostic[m[K’ [[01;35m[K-Wpragmas[m[K]
+[81.407s]    60 | #pragma GCC diagnostic [01;35m[Kpopf[m[K
+[81.407s]       |                        [01;35m[K^~~~[m[K
+[87.989s] [ 75%] [32m[1mLinking CXX shared library libmono_node.so[0m
+[89.458s] [ 75%] Built target mono_node
+[89.636s] [ 87%] [32mBuilding CXX object CMakeFiles/stereo_node.dir/src/argus_camera_stereo_node.cpp.o[0m
+[102.626s] [100%] [32m[1mLinking CXX shared library libstereo_node.so[0m
+[103.526s] [100%] Built target stereo_node

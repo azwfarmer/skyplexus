@@ -278,7 +278,12 @@ if [[ $VERBOSE -eq 1 ]]; then
 fi
 
 docker run -it --rm \
-    -t -i --device=/dev/ttyTHS1 \
+    -t -i \
+    --device=/dev/ttyTHS1 \
+    --device=/dev/ttyACM0 \
+    --device=/dev/ttyACM1 \
+    --device=/dev/ttyACM2 \
+    --device=/dev/ttyACM3 \
     --device=/dev/video0 \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \

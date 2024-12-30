@@ -1,0 +1,137 @@
+[0.859s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros -- -j12 -l12
+[0.952s] [35m[1mConsolidate compiler generated dependencies of target os_sensor[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target os_image[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target os_cloud[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target os_replay[0m
+[0.958s] [35m[1mConsolidate compiler generated dependencies of target os_driver[0m
+[0.973s] [34m[1mGenerating build info header[0m
+[0.985s] [  3%] Built target gtest
+[0.995s] [ 20%] Built target os_sensor
+[0.995s] [ 20%] Built target os_image
+[0.996s] [ 20%] Built target os_replay
+[0.996s] [ 20%] Built target os_driver
+[0.996s] [ 21%] Built target os_cloud
+[1.002s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.022s] [ 21%] Built target ouster_generate_header
+[1.027s] [ 25%] Built target gtest_main
+[1.049s] [35m[1mConsolidate compiler generated dependencies of target ouster_client[0m
+[1.099s] [ 52%] Built target ouster_client
+[1.121s] [35m[1mConsolidate compiler generated dependencies of target ouster_ros_library[0m
+[1.166s] [ 56%] Built target ouster_ros_library
+[1.189s] [35m[1mConsolidate compiler generated dependencies of target os_replay_component[0m
+[1.189s] [35m[1mConsolidate compiler generated dependencies of target os_sensor_component[0m
+[1.189s] [35m[1mConsolidate compiler generated dependencies of target os_cloud_component[0m
+[1.189s] [35m[1mConsolidate compiler generated dependencies of target os_image_component[0m
+[1.191s] [35m[1mConsolidate compiler generated dependencies of target os_driver_component[0m
+[1.194s] [35m[1mConsolidate compiler generated dependencies of target ouster_ros_test[0m
+[1.232s] [ 61%] Built target os_replay_component
+[1.244s] [ 67%] Built target os_sensor_component
+[1.257s] [ 72%] Built target os_cloud_component
+[1.262s] [ 83%] Built target os_image_component
+[1.263s] [ 85%] Built target os_driver_component
+[1.279s] [100%] Built target ouster_ros_test
+[1.303s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros -- -j12 -l12
+[1.323s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros
+[1.335s] -- Install configuration: "Release"
+[1.336s] -- Execute custom install script
+[1.337s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/build.h
+[1.357s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/buffered_udp_source.h
+[1.374s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/client.h
+[1.387s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/defaults.h
+[1.401s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/image_processing.h
+[1.417s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/cartesian.h
+[1.435s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/lidar_scan_impl.h
+[1.457s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/packet_writer.h
+[1.473s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/impl/profile_extension.h
+[1.488s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/lidar_scan.h
+[1.507s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/sensor_http.h
+[1.527s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/types.h
+[1.544s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/util.h
+[1.557s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster/version.h
+[1.574s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/optional-lite/nonstd/optional.hpp
+[1.592s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/cmake/OusterSDK/OusterSDKConfig.cmake
+[1.608s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/cmake/OusterSDK/OusterSDKConfigVersion.cmake
+[1.623s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/LICENSE
+[1.638s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/LICENSE-bin
+[1.655s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_sensor
+[1.672s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_replay
+[1.689s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_cloud
+[1.705s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_image
+[1.723s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/ouster_ros/os_driver
+[1.739s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libouster_ros_library.so
+[1.759s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_sensor_component.so
+[1.777s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_replay_component.so
+[1.792s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_cloud_component.so
+[1.807s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_image_component.so
+[1.823s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/lib/libos_driver_component.so
+[1.838s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/common_point_types.h
+[1.853s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_point.h
+[1.867s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_processing_node_base.h
+[1.881s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_ros.h
+[1.898s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/os_sensor_node_base.h
+[1.913s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/sensor_point_types.h
+[1.930s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster_ros/visibility_control.h
+[1.949s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/optional-lite/nonstd/optional.hpp
+[1.964s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/buffered_udp_source.h
+[1.978s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/client.h
+[1.997s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/defaults.h
+[2.013s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/image_processing.h
+[2.029s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/cartesian.h
+[2.047s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/lidar_scan_impl.h
+[2.075s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/packet_writer.h
+[2.096s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/impl/profile_extension.h
+[2.117s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/lidar_scan.h
+[2.135s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/sensor_http.h
+[2.151s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/types.h
+[2.167s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/util.h
+[2.191s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/version.h
+[2.213s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/optional-lite/nonstd/optional.hpp
+[2.230s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/indexed_pcap_reader.h
+[2.247s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/os_pcap.h
+[2.269s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/include/ouster_ros/include/ouster/pcap.h
+[2.285s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/LICENSE
+[2.303s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/driver.launch.py
+[2.320s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/driver_launch.py
+[2.335s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/record.composite.launch.xml
+[2.353s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/record.launch.xml
+[2.369s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay.composite.launch.xml
+[2.387s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay.launch.xml
+[2.403s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/replay_pcap.launch.xml
+[2.418s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/rviz.launch.py
+[2.434s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/rviz.launch.xml
+[2.452s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.composite.launch.py
+[2.469s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.composite.launch.xml
+[2.484s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.independent.launch.py
+[2.499s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.independent.launch.xml
+[2.525s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor.launch.xml
+[2.539s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/launch/sensor_mtp.launch.xml
+[2.561s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/community_driver.rviz
+[2.577s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/community_driver_config.yaml
+[2.592s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/driver_params.yaml
+[2.608s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/metadata-qos-override.yaml
+[2.622s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/os_sensor_cloud_image_params.yaml
+[2.638s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/viz-reliable.rviz
+[2.658s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/config/viz.rviz
+[2.674s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/library_path.sh
+[2.689s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/library_path.dsv
+[2.707s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/package_run_dependencies/ouster_ros
+[2.734s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/parent_prefix_path/ouster_ros
+[2.753s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/ament_prefix_path.sh
+[2.767s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/ament_prefix_path.dsv
+[2.781s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/path.sh
+[2.796s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/environment/path.dsv
+[2.811s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.bash
+[2.826s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.sh
+[2.843s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.zsh
+[2.860s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/local_setup.dsv
+[2.876s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/package.dsv
+[2.891s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/packages/ouster_ros
+[2.906s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ament_index/resource_index/rclcpp_components/ouster_ros
+[2.922s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.938s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.955s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[2.971s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ouster_rosConfig.cmake
+[2.987s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/cmake/ouster_rosConfig-version.cmake
+[3.002s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_ros/share/ouster_ros/package.xml
+[3.023s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros' returned '0': AMENT_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_ros

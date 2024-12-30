@@ -1,0 +1,207 @@
+[1.074s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-sensor-msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs
+[2.097s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.097s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.098s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[2.098s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.098s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.098s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.098s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.099s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.099s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.101s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.074s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.429s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.489s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.550s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.551s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.551s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[3.644s] -- Configuring done
+[3.760s] -- Generating done
+[3.802s] -- Build files have been written to: /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs
+[3.841s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake /workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-sensor-msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs
+[3.842s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs -- -j12 -l12
+[4.079s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_generator_c[0m
+[4.079s] [  1%] Built target ouster_sensor_msgs__cpp
+[4.079s] [ 12%] Built target ouster_sensor_msgs__rosidl_generator_c
+[4.096s] [ 12%] Built target ament_cmake_python_symlink_ouster_sensor_msgs
+[4.116s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_cpp[0m
+[4.125s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_c[0m
+[4.129s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[4.137s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_introspection_c[0m
+[4.150s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c[0m
+[4.158s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_introspection_cpp[0m
+[4.214s] [ 23%] Built target ouster_sensor_msgs__rosidl_typesupport_c
+[4.225s] [ 34%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c
+[4.229s] [ 45%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp
+[4.232s] [ 56%] Built target ouster_sensor_msgs__rosidl_typesupport_cpp
+[4.236s] [ 67%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c
+[4.263s] [ 78%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_cpp
+[4.392s] [ 78%] Built target ouster_sensor_msgs
+[4.544s] [ 80%] Built target ouster_sensor_msgs__py
+[4.623s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_generator_py[0m
+[4.729s] [ 89%] Built target ouster_sensor_msgs__rosidl_generator_py
+[4.820s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.832s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[4.854s] [35m[1mConsolidate compiler generated dependencies of target ouster_sensor_msgs__rosidl_typesupport_c__pyext[0m
+[4.948s] [ 92%] Built target ouster_sensor_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.967s] [ 96%] Built target ouster_sensor_msgs__rosidl_typesupport_introspection_c__pyext
+[4.973s] [100%] Built target ouster_sensor_msgs__rosidl_typesupport_c__pyext
+[5.283s] running egg_info
+[5.325s] writing ouster_sensor_msgs.egg-info/PKG-INFO
+[5.326s] writing dependency_links to ouster_sensor_msgs.egg-info/dependency_links.txt
+[5.326s] writing top-level names to ouster_sensor_msgs.egg-info/top_level.txt
+[9.670s] reading manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[9.672s] writing manifest file 'ouster_sensor_msgs.egg-info/SOURCES.txt'
+[10.039s] [100%] Built target ament_cmake_python_build_ouster_sensor_msgs_egg
+[10.116s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs -- -j12 -l12
+[10.117s] Invoking command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs
+[10.389s] -- Install configuration: "Release"
+[10.389s] -- Execute custom install script
+[10.390s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ament_index/resource_index/rosidl_interfaces/ouster_sensor_msgs
+[10.390s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__functions.h
+[10.390s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__struct.h
+[10.390s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__type_support.h
+[10.390s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/packet_msg.h
+[10.391s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.391s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__functions.h
+[10.391s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__struct.h
+[10.391s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__type_support.h
+[10.391s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__functions.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__struct.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__type_support.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__functions.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__struct.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__type_support.h
+[10.392s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_config.h
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_metadata.h
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/set_config.h
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/library_path.sh
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/library_path.dsv
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_fastrtps_c.h
+[10.393s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.394s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_fastrtps_c.h
+[10.394s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_c.h
+[10.394s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_fastrtps_c.h
+[10.394s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__builder.hpp
+[10.394s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__struct.hpp
+[10.395s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__traits.hpp
+[10.395s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/packet_msg.hpp
+[10.395s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__builder.hpp
+[10.395s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__struct.hpp
+[10.395s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__traits.hpp
+[10.396s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__builder.hpp
+[10.396s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__struct.hpp
+[10.396s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__traits.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__builder.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__struct.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__traits.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_config.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/get_metadata.hpp
+[10.397s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/set_config.hpp
+[10.398s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[10.407s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.408s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_fastrtps_cpp.hpp
+[10.408s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_fastrtps_cpp.hpp
+[10.408s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_fastrtps_cpp.hpp
+[10.408s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_introspection_c.h
+[10.409s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.409s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_introspection_c.h
+[10.409s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_c.h
+[10.409s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_introspection_c.h
+[10.409s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/msg/detail/packet_msg__rosidl_typesupport_introspection_cpp.hpp
+[10.410s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_config__rosidl_typesupport_introspection_cpp.hpp
+[10.410s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/get_metadata__rosidl_typesupport_introspection_cpp.hpp
+[10.410s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/include/ouster_sensor_msgs/ouster_sensor_msgs/srv/detail/set_config__rosidl_typesupport_introspection_cpp.hpp
+[10.410s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/pythonpath.sh
+[10.410s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/pythonpath.dsv
+[10.411s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/PKG-INFO
+[10.411s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/SOURCES.txt
+[10.411s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/dependency_links.txt
+[10.411s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs-0.12.2-py3.10.egg-info/top_level.txt
+[10.412s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/__init__.py
+[10.412s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_c.c
+[10.412s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.412s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/_ouster_sensor_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.412s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/libouster_sensor_msgs__rosidl_generator_py.so
+[10.413s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/__init__.py
+[10.413s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/_packet_msg.py
+[10.413s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg/_packet_msg_s.c
+[10.413s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[10.413s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[10.414s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[10.414s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/__init__.py
+[10.414s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_config.py
+[10.414s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_config_s.c
+[10.414s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_metadata.py
+[10.427s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_get_metadata_s.c
+[10.428s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_set_config.py
+[10.428s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv/_set_config_s.c
+[10.429s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[10.429s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[10.430s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/ouster_sensor_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[10.430s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/msg/PacketMsg.idl
+[10.430s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig.idl
+[10.430s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig.idl
+[10.431s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata.idl
+[10.431s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/msg/PacketMsg.msg
+[10.431s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig.srv
+[10.431s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig_Request.msg
+[10.432s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetConfig_Response.msg
+[10.432s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig.srv
+[10.432s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig_Request.msg
+[10.432s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/SetConfig_Response.msg
+[10.433s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata.srv
+[10.433s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata_Request.msg
+[10.433s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/srv/GetMetadata_Response.msg
+[10.433s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ament_index/resource_index/package_run_dependencies/ouster_sensor_msgs
+[10.433s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ament_index/resource_index/parent_prefix_path/ouster_sensor_msgs
+[10.434s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/ament_prefix_path.sh
+[10.434s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/ament_prefix_path.dsv
+[10.434s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/path.sh
+[10.435s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/environment/path.dsv
+[10.435s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.bash
+[10.435s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.sh
+[10.435s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.zsh
+[10.436s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/local_setup.dsv
+[10.436s] -- Symlinking: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/package.dsv
+[10.460s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ament_index/resource_index/packages/ouster_sensor_msgs
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgsConfig.cmake
+[10.461s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgsConfig-version.cmake
+[10.462s] -- Up-to-date symlink: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/package.xml
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_c.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_c.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_c.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_c.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_introspection_cpp.so
+[10.462s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_typesupport_cpp.so
+[10.788s] Listing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs'...
+[10.788s] Compiling '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/__init__.py'...
+[10.789s] Listing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/msg'...
+[10.789s] Listing '/workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/local/lib/python3.10/dist-packages/ouster_sensor_msgs/srv'...
+[10.856s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/lib/libouster_sensor_msgs__rosidl_generator_py.so
+[10.857s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cExport.cmake
+[10.857s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cExport-release.cmake
+[10.857s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_cppExport.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.858s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[10.859s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cExport.cmake
+[10.859s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cExport-release.cmake
+[10.859s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.859s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[10.859s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cppExport.cmake
+[10.860s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/ouster_sensor_msgs__rosidl_typesupport_cppExport-release.cmake
+[10.860s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_pyExport.cmake
+[10.860s] -- Up-to-date: /workspaces/isaac_ros-dev/isaac_ros_common/src/install/ouster_sensor_msgs/share/ouster_sensor_msgs/cmake/export_ouster_sensor_msgs__rosidl_generator_pyExport-release.cmake
+[10.892s] Invoked command in '/workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/py_perception:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_test:/workspaces/isaac_ros-dev/isaac_ros_common/src/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /workspaces/isaac_ros-dev/isaac_ros_common/src/build/ouster_sensor_msgs

@@ -1,0 +1,222 @@
+import os
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.actions import ExecuteProcess
+from launch_ros.actions import Node
+import launch
+import numpy as np
+import launch_ros.actions
+
+def generate_launch_description():
+
+    map2home = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='map2home',
+        arguments=['--x', '-2.6219', '--y', '1.6197', '--z', '1.2643',
+            '--roll', '0.0', '--pitch', '0.0','--yaw', '0.0',
+            '--frame-id', 'map', '--child-frame-id', 'home']
+    )
+
+    # map2home = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='map2home',
+    #     arguments=['--x', '1', '--y', '2', '--z', '3',
+    #         '--roll', '1.0', '--pitch', '2.0','--yaw', '3.0',
+    #         '--frame-id', 'map', '--child-frame-id', 'home']
+    # )
+
+    base_link2payload = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='os_base_static_tf_pub',
+        arguments=['--x', '0.1', '--y', '0.0', '--z', '-0.42',
+            '--roll', '0.0', '--pitch', str(np.pi/4),'--yaw', '0.0',
+            '--frame-id', 'base_link', '--child-frame-id', 'payload']
+    )
+
+    payload2os_sensor = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='payload2os_sensor',
+        arguments=['--x', '0.0', '--y', '0.0', '--z', '0.0',
+            '--roll', str(np.pi), '--pitch', '0.0','--yaw', '0.0',
+            '--frame-id', 'payload', '--child-frame-id', 'os_sensor']
+    )
+
+
+    # payload2radar = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='payload2radar',
+    #     arguments=['--x', '0.11', '--y', '0.008', '--z', '0.116',
+    #         '--roll', '0.0', '--pitch', '0.0','--yaw', '0.0',
+    #         '--frame-id', 'payload', '--child-frame-id', 'altosRadar']
+    # )
+
+
+    payload2camera_link = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='payload2camera_link',
+        arguments=["0.045","0.0","0.22",
+            "0","0","0","1",
+            'payload','camera_link']
+    )
+
+    camera_depth_frame2camera_color_frame = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='camera_depth_frame2camera_color_frame',
+        arguments=[
+            "-0.0003613578379154205", "-0.023769954681396484", "-3.1979335471987725e-06",
+            "0.002357715740799904", "-0.001010999665595591", "-0.0007279714336618781", "0.9999964237213135",
+            'camera_depth_frame', 'camera_color_frame'
+        ]
+    )
+
+    camera_color_frame2camera_color_optical_frame = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='camera_color_frame2camera_color_optical_frame',
+        arguments=[
+            "0.0", "-0.0", "-0.0",
+            "-0.5", "0.5", "-0.5", "0.5",
+            'camera_color_frame', 'camera_color_optical_frame'
+        ]
+    )
+
+    camera_depth_frame2camera_depth_optical_frame = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='camera_depth_frame2camera_depth_optical_frame',
+        arguments=[
+            "0.0", "-0.0", "-0.0",
+            "-0.5", "0.5", "-0.5", "0.5",
+            'camera_depth_frame', 'camera_depth_optical_frame'
+        ]
+    )
+
+    camera_link2camera_depth_frame = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='camera_link2camera_depth_frame',
+        arguments=[
+            "0.0", "0.0", "0.0",
+            "0.0", "0.0", "0.0", "1.0",
+            'camera_link', 'camera_depth_frame'
+        ]
+    )
+
+    # camera_color_frame2camera_accel_frame = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='camera_color_frame2camera_accel_frame',
+    #     arguments=[
+    #         '-0.0024994454383850096', '-0.018502710342407226', '0.0002345915138721466',
+    #         '-0.005852920934557915', '0.0007018941687420011', '0.0002480990660842508', '0.9999825954437256',
+    #         'camera_color_frame','camera_accel_frame']
+    # )
+
+    # camera_accel_frame2camera_accel_optical_frame = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='camera_accel_frame2camera_accel_optical_frame',
+    #     arguments=[
+    #         '0', '0', '0',
+    #         '-0.5', '0.5', '-0.5', '0.5',
+    #         'camera_accel_frame','camera_accel_optical_frame']
+    # )
+
+    # camera_color_frame2camera_gyro_frame = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='camera_color_frame2camera_gyro_frame',
+    #     arguments=[
+    #         '-0.0024994454383850096', '-0.018502710342407226', '0.0002345915138721466',
+    #         '-0.005852920934557915', '0.0007018941687420011', '0.0002480990660842508', '0.9999825954437256',
+    #         'camera_color_frame','camera_gyro_frame']
+    # )
+
+    # camera_gyro_frame2camera_gyro_optical_frame = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='camera_gyro_frame2camera_gyro_optical_frame',
+    #     arguments=[
+    #         '0', '0', '0',
+    #         '-0.5', '0.5', '-0.5', '0.5',
+    #         'camera_gyro_frame','camera_gyro_optical_frame']
+    # )
+
+    # camera_link2camera_color_frame = Node(
+    #     package='tf2_ros',
+    #     executable='static_transform_publisher',
+    #     name='camera_link2camera_color_frame',
+    #     arguments=[
+    #         '0', '0', '0',
+    #         '0', '0', '0', '1',
+    #         'camera_link','camera_color_frame']
+    # )
+
+    os_sensor2os_lidar = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='os_sensor2os_lidar',
+        arguments=[
+            '0', '0', '0.03618',
+            '0', '0', '1', '0',
+            'os_sensor','os_lidar']
+    )
+
+    os_sensor2os_imu = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='os_sensor2os_imu',
+            arguments=[
+            '0.006253', '-0.011775', '0.007645',
+            '0', '0', '0', '1',
+            'os_sensor','os_imu']
+    )
+
+    mapgen = Node(
+        package='py_perception',
+        executable='map_gen',
+        name='map_gen',
+    )
+
+    bag_replay = ExecuteProcess(
+        cmd=['ros2', 'bag', 'play', os.environ['BAG'],"--start-offset", os.environ['OFFSET']],
+        output='log'
+    )
+
+    rviz = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        output='log',
+        arguments=['-d', '/workspaces/isaac_ros-dev/isaac_ros_common/src/rviz_camlidrad.rviz']
+    )
+
+    return LaunchDescription([
+        map2home,
+        base_link2payload,
+        # payload2radar,
+        payload2os_sensor,
+        payload2camera_link,
+        camera_color_frame2camera_color_optical_frame,
+        camera_depth_frame2camera_depth_optical_frame,
+        camera_depth_frame2camera_color_frame,
+        camera_link2camera_depth_frame,
+        # camera_color_frame2camera_accel_frame,
+        # camera_accel_frame2camera_accel_optical_frame,
+        # camera_color_frame2camera_gyro_frame,
+        # camera_gyro_frame2camera_gyro_optical_frame,
+        # camera_link2camera_color_frame,
+        os_sensor2os_lidar,
+        os_sensor2os_imu,
+        mapgen,
+        bag_replay,
+        rviz
+    ])

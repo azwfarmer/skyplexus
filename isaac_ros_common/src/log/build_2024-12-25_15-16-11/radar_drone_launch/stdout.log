@@ -1,0 +1,24 @@
+running develop
+running egg_info
+writing radar_drone_launch.egg-info/PKG-INFO
+writing dependency_links to radar_drone_launch.egg-info/dependency_links.txt
+writing requirements to radar_drone_launch.egg-info/requires.txt
+writing top-level names to radar_drone_launch.egg-info/top_level.txt
+reading manifest file 'radar_drone_launch.egg-info/SOURCES.txt'
+writing manifest file 'radar_drone_launch.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/lib/python3.10/site-packages/radar-drone-launch.egg-link (link to .)
+
+Installed /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch
+running symlink_data
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/resource/radar_drone_launch -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/ament_index/resource_index/packages
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/package.xml -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/dronecam.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/replay.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/mapgenold.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/tf_visualizer.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/apm_altos.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/mavros_only.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/new.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/mapgen.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch
+symbolically linking /workspaces/isaac_ros-dev/isaac_ros_common/src/build/radar_drone_launch/launch/img_proc.launch.py -> /workspaces/isaac_ros-dev/isaac_ros_common/src/install/radar_drone_launch/share/radar_drone_launch/launch

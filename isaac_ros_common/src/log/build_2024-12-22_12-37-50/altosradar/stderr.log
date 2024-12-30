@@ -1,0 +1,8 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:164:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KobjectCntFrame[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  164 |     int [01;35m[KobjectCntFrame[m[K = 0;
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/altosradar/src/altosRadarParse.cpp:64:10:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Ksize_t fread(void*, size_t, size_t, FILE*)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K-Wunused-result[m[K]
+   64 |     [01;35m[Kfread(rcsBuf, 1201, sizeof(float), fp_rcs)[m[K;
+      |     [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
