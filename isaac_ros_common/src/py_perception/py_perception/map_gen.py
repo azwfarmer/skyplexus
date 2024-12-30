@@ -20,11 +20,11 @@ from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
 
-efficientvit_path = os.path.abspath('/workspaces/isaac_ros-dev/efficientvit')
-sys.path.append(efficientvit_path)
-from efficientvit.models.utils import resize
-from efficientvit.seg_model_zoo import create_seg_model
-from eval_seg_model import ADE20KDataset, ToTensor, get_canvas
+# efficientvit_path = os.path.abspath('/workspaces/isaac_ros-dev/efficientvit')
+# sys.path.append(efficientvit_path)
+# from efficientvit.models.utils import resize
+# from efficientvit.seg_model_zoo import create_seg_model
+# from eval_seg_model import ADE20KDataset, ToTensor, get_canvas
 
 class MapGen(Node):
 
@@ -36,21 +36,24 @@ class MapGen(Node):
 
         self.device = torch.device("cuda")
 
-        self.min_x = 0
-        self.min_y = 0
-        self.max_x = 0
-        self.max_y = 0
+        self.min_x = -10
+        self.min_y = -10
+        self.max_x = 10
+        self.max_y = 10
 
         self.cells_x = self.max_x - self.min_x + 1
         self.cells_y = self.max_y - self.min_y + 1
 
-        # self.grid_RGB = torch.zeros((self.cells_y, self.cells_x), dtype=torch.int, device=self.device) # pad all of these in the future
+
+
+        self.grid_H = torch.zeros((self.cells_x, self.cells_y), dtype=torch.int, device=self.device)
+        self.grid_S = torch.zeros((self.cells_x, self.cells_y), dtype=torch.int, device=self.device)
+        self.grid_V = torch.zeros((self.cells_x, self.cells_y), dtype=torch.int, device=self.device)
         # self.grid_intensity = torch.zeros((self.cells_y, self.cells_x), dtype=torch.float32, device=self.device)
         # self.grid_z_max = torch.zeros((self.cells_y, self.cells_x), dtype=torch.float32, device=self.device)
-        self.grid_z_mean = torch.zeros((self.cells_x, self.cells_y), dtype=torch.float32, device=self.device)
 
-        self.grid_z_sum = torch.zeros(self.cells_x * self.cells_y, dtype=torch.float32, device=self.device)
-        self.grid_z_count = torch.zeros(self.cells_x * self.cells_y, dtype=torch.int, device=self.device)
+        self.grid_z_sum = torch.zeros((self.cells_x, self.cells_y), dtype=torch.float32, device=self.device)
+        self.grid_z_count = torch.zeros((self.cells_x, self.cells_y), dtype=torch.int, device=self.device)
 
         self.grid_res = 0.25
 
@@ -78,14 +81,13 @@ class MapGen(Node):
 
         self.pcl_pub = self.create_publisher(PointCloud2, '/pcl', 10)
 
+        self.image = torch.zeros((720, 1280, 3), dtype=torch.int, device=self.device)
 
-        self.image = torch.zeros((1080, 1920, 3), dtype=torch.int, device=self.device)
+        # self.model = create_seg_model("l2", "ade20k", weight_url=None).cuda()
+        # self.model.eval()
 
-        self.model = create_seg_model("l2", "ade20k", weight_url=None).cuda()
-        self.model.eval()
-
-        self.intrinsic = torch.tensor([[1252.348876953125, 0, 971.9642944335938], 
-                                      [0, 1252.5963134765625, 542.4281616210938], 
+        self.intrinsic = torch.tensor([[614.0482788085938, 0, 647.2186279296875], 
+                                      [0, 614.0172119140625, 350.9230041503906], 
                                       [0, 0, 1]], device=self.device)
 
         self.tf_buffer = Buffer()
@@ -146,8 +148,8 @@ class MapGen(Node):
         fB[mask5] = fX[mask5]
 
         fB += fM
-        fR += fM;
-        fG += fM;
+        fR += fM
+        fG += fM
 
         fR = torch.clamp(fR * 255, 0, 255).to(torch.uint8)
         fG = torch.clamp(fG * 255, 0, 255).to(torch.uint8)
@@ -155,6 +157,12 @@ class MapGen(Node):
 
         rgb = torch.stack((fR, fG, fB), dim=1).squeeze()
         return rgb
+
+    def get_shape(self, obj, name=""):
+        self.get_logger().info(f'{name}.shape: {obj.shape}')
+    
+    def print(self, obj, name=""):
+        self.get_logger().info(f'{name}: {obj}')
 
     def fields_to_dtype(self, fields, point_step):
         offset = 0
@@ -192,19 +200,21 @@ class MapGen(Node):
             return np.reshape(cloud_arr, (cloud_msg.height, cloud_msg.width))
 
     def project_to_camera_frame(self, points_xyz, os_sensor_to_camera_frame_tf):
-        homogeneous_matrix_cam = ros2_numpy.numpify(os_sensor_to_camera_frame_tf.transform)[:3]
+        # homogeneous_matrix_cam = ros2_numpy.numpify(os_sensor_to_camera_frame_tf.transform)[:3]
+        homogeneous_matrix_cam = self.numpify(os_sensor_to_camera_frame_tf)[:3]
         os_sensor_to_camera_extrinsic = torch.tensor(homogeneous_matrix_cam, dtype=torch.float32, requires_grad=True, device=self.device)
 
         to_proj_points_xyz = torch.vstack((points_xyz.T, torch.ones((1, points_xyz.shape[0]), device=self.device)))
         proj_pts = self.intrinsic @ os_sensor_to_camera_extrinsic @ to_proj_points_xyz
         proj_pts = (proj_pts / proj_pts[2, :].unsqueeze(0))[0:2]
 
-        cam_mask = (proj_pts[0, :] > 1) & (proj_pts[0, :] < 1918) & (proj_pts[1, :] > 1) & (proj_pts[1, :] < 1078)
+        cam_mask = (proj_pts[0, :] > 1) & (proj_pts[0, :] < 1278) & (proj_pts[1, :] > 1) & (proj_pts[1, :] < 718)
         proj_pts_in_frame = proj_pts[:, cam_mask]
 
         return torch.floor(proj_pts_in_frame.T).int(), cam_mask
 
-    def publish_pointcloud2(self, tensor_points, header):
+    def publish_pointcloud(self, tensor_points, header):
+        self.get_shape(tensor_points, "tensor_points")
         points = tensor_points.cpu().detach().numpy()
         
         header.frame_id = 'home'
@@ -213,6 +223,25 @@ class MapGen(Node):
             PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
             PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
             PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1)
+        ]
+        
+        cloud_msg = point_cloud2.create_cloud(header, fields, points)
+
+        self.pcl_pub.publish(cloud_msg)
+    
+    def publish_pointcloud_rgb(self, tensor_points, header):
+        self.get_shape(tensor_points, "tensor_points")
+        points = tensor_points.cpu().detach().numpy()
+        
+        header.frame_id = 'home'
+
+        fields = [
+            PointField(name='x', offset=0, datatype=PointField.FLOAT32, count=1),
+            PointField(name='y', offset=4, datatype=PointField.FLOAT32, count=1),
+            PointField(name='z', offset=8, datatype=PointField.FLOAT32, count=1),
+            PointField(name='r', offset=12, datatype=PointField.UINT32, count=1),
+            PointField(name='g', offset=16, datatype=PointField.UINT32, count=1),
+            PointField(name='b', offset=20, datatype=PointField.UINT32, count=1),
         ]
         
         cloud_msg = point_cloud2.create_cloud(header, fields, points)
@@ -236,66 +265,77 @@ class MapGen(Node):
 
         self.image[Y_flat, X_flat] = colors_expanded
         self.image = self.image[:,:,[2,1,0]]
-        cv2.imshow("overlay", self.image.numpy())
+        cv2.imshow("overlay", self.image.cpu().numpy())
         cv2.waitKey(1)
 
-    def semseg(self):
-        data = self.image
-        h, w = self.image.shape[:2]
-        if h < w:
-            th = 512
-            tw = math.ceil(w / h * th / 32) * 32
-        else:
-            tw = 512
-            th = math.ceil(h / w * tw / 32) * 32
-        if th != h or tw != w:
-            data = cv2.resize(
-                self.image.cpu().numpy(),
-                dsize=(tw, th),
-                interpolation=cv2.INTER_CUBIC,
-            )
+    # def semseg(self):
+    #     data = self.image
+    #     h, w = self.image.shape[:2]
+    #     if h < w:
+    #         th = 512
+    #         tw = math.ceil(w / h * th / 32) * 32
+    #     else:
+    #         tw = 512
+    #         th = math.ceil(h / w * tw / 32) * 32
+    #     if th != h or tw != w:
+    #         data = cv2.resize(
+    #             self.image.cpu().numpy(),
+    #             dsize=(tw, th),
+    #             interpolation=cv2.INTER_CUBIC,
+    #         )
 
-        transform = transforms.Compose(
-            [
-                ToTensor(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-            ]
-        )
-        class_colors = ADE20KDataset.class_colors
-        data = transform({"data": data, "label": np.ones_like(data)})["data"]
+    #     transform = transforms.Compose(
+    #         [
+    #             ToTensor(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
+    #         ]
+    #     )
+    #     class_colors = ADE20KDataset.class_colors
+    #     data = transform({"data": data, "label": np.ones_like(data)})["data"]
 
-        with torch.inference_mode():
-            data = torch.unsqueeze(data, dim=0).cuda()
-            output = self.model(data)
-            if output.shape[-2:] != self.image.shape[:2]:
-                output = resize(output, size=self.image.shape[:2])
-            output = torch.argmax(output, dim=1)[0]
-            return output
+    #     with torch.inference_mode():
+    #         data = torch.unsqueeze(data, dim=0).cuda()
+    #         output = self.model(data)
+    #         if output.shape[-2:] != self.image.shape[:2]:
+    #             output = resize(output, size=self.image.shape[:2])
+    #         output = torch.argmax(output, dim=1)[0]
+    #         return output
+
+    # old commented out
             # canvas = get_canvas(self.image, output, class_colors)
             # return canvas
             # cv2.imshow("semseg", canvas)
             # cv2.waitKey(1)
 
-    def map_pcl(self, points_xyz, cam_mask, os_sensor_to_home_tf):     
-        homogeneous_matrix_map = ros2_numpy.numpify(os_sensor_to_home_tf.transform)[:3]
-        homogeneous_matrix_map[0,0] = -1 * homogeneous_matrix_map[0,0]
-        homogeneous_matrix_map[0,1], homogeneous_matrix_map[1,2] = -1 * homogeneous_matrix_map[1,2], homogeneous_matrix_map[0,1]
-        homogeneous_matrix_map[1,0], homogeneous_matrix_map[2,1] = homogeneous_matrix_map[2,1], homogeneous_matrix_map[1,0]
+    def numpify(self, tf):
+        homogeneous_matrix_map = ros2_numpy.numpify(tf.transform)[:3]
+        temp2_2 = homogeneous_matrix_map[2,2]
+        homogeneous_matrix_map[2,2] = -1 * homogeneous_matrix_map[0,0]
+        homogeneous_matrix_map[0,0] = temp2_2
+
+        temp2_1 = homogeneous_matrix_map[2,1]
+        homogeneous_matrix_map[2,1] = homogeneous_matrix_map[1,0]
+        homogeneous_matrix_map[1,0] = temp2_1
+
+        temp0_1 = homogeneous_matrix_map[0,1]
+        homogeneous_matrix_map[0,1] = -1 * homogeneous_matrix_map[1,2]
+        homogeneous_matrix_map[1,2] = temp0_1
+
         homogeneous_matrix_map[1,1] = -1 * homogeneous_matrix_map[1,1]
         homogeneous_matrix_map[2,0] = -1 * homogeneous_matrix_map[2,0]
+        return homogeneous_matrix_map
 
+    def map_pcl(self, points_xyz, cam_mask, os_sensor_to_home_tf):    
+        homogeneous_matrix_map = self.numpify(os_sensor_to_home_tf)
         os_sensor_to_home_extrinsic = torch.tensor(homogeneous_matrix_map, dtype=torch.float32, requires_grad=True, device=self.device)
-
         filtered_points_xyz = points_xyz[cam_mask]
-
         mapped_points = (os_sensor_to_home_extrinsic @ torch.vstack((filtered_points_xyz.T, torch.ones((1, filtered_points_xyz.shape[0]), device=self.device)))).T
-
         return mapped_points
 
     def pad_grid(self, grid, d_min_x, d_max_x, d_min_y, d_max_y):
         temp_grid = torch.zeros((self.cells_x, self.cells_y), dtype=grid.dtype, device=self.device)
         temp_grid[d_min_x : self.cells_x - d_max_x, d_min_y : self.cells_y - d_max_y] = grid
         return temp_grid
-
+    
     def points_callback(self, msg):
         if not self.img_received:
             return
@@ -311,13 +351,15 @@ class MapGen(Node):
             return
 
         raw_points_dict = ros2_numpy.numpify(msg)
-        raw_points_xyz = torch.tensor(raw_points_dict['xyz'], device=self.device, requires_grad=True)
-        valid_mask = (raw_points_xyz >= 1).all(dim=1)
-        points_xyz = raw_points_xyz[valid_mask,:]
-        
-        filtered_points_cam_frame, cam_mask = self.project_to_camera_frame(points_xyz, os_sensor_to_camera_frame_tf)
 
-        mapped_points = self.map_pcl(points_xyz, cam_mask, os_sensor_to_home_tf)
+        raw_points_xyz = torch.tensor(raw_points_dict['xyz'], device=self.device, requires_grad=True)
+        raw_intensity = torch.tensor(raw_points_dict['intensity'] / 65535.0, dtype=torch.float32, device=self.device, requires_grad=True)
+
+        filtered_points_cam_frame, cam_mask = self.project_to_camera_frame(raw_points_xyz, os_sensor_to_camera_frame_tf)
+        filtered_intensity = raw_intensity[cam_mask]
+
+        mapped_points = self.map_pcl(raw_points_xyz, cam_mask, os_sensor_to_home_tf)
+        mapped_colors = self.image[filtered_points_cam_frame[:,1], filtered_points_cam_frame[:,0]]
 
         if mapped_points.numel() == 0:
             return
@@ -326,7 +368,6 @@ class MapGen(Node):
 
         max_x = torch.max(mapped_points_idx[:,0]).item()
         max_y = torch.max(mapped_points_idx[:,1]).item()
-
         min_x = torch.min(mapped_points_idx[:,0]).item()
         min_y = torch.min(mapped_points_idx[:,1]).item()
 
@@ -345,7 +386,7 @@ class MapGen(Node):
             self.max_x = max_x
 
         if max_y > self.max_y:
-            d_max_y = max_y = self.max_y
+            d_max_y = max_y - self.max_y
             self.max_y = max_y
         
         self.cells_x = self.max_x - self.min_x + 1
@@ -354,34 +395,33 @@ class MapGen(Node):
         mapped_points_idx[:,0] -= self.min_x
         mapped_points_idx[:,1] -= self.min_y
         mapped_points_idx_flat = mapped_points_idx[:,1] + mapped_points_idx[:,0] * self.cells_y
+        self.grid_H = self.pad_grid(self.grid_H, d_min_x, d_max_x, d_min_y, d_max_y)
+        self.grid_S = self.pad_grid(self.grid_S, d_min_x, d_max_x, d_min_y, d_max_y)
+        self.grid_V = self.pad_grid(self.grid_V, d_min_x, d_max_x, d_min_y, d_max_y)
 
-        self.grid_z_mean = self.pad_grid(self.grid_z_mean, d_min_x, d_max_x, d_min_y,d_max_y)
+        grid_z_mean = torch.zeros((self.cells_x, self.cells_y), dtype=torch.float32, device=self.device)
         self.grid_z_count = self.pad_grid(self.grid_z_count, d_min_x, d_max_x, d_min_y, d_max_y)
         grid_z_count_flat = self.grid_z_count.view(self.cells_x * self.cells_y)
+
         grid_z_count_flat.index_add_(0, mapped_points_idx_flat, torch.ones(mapped_points.size(0), dtype=torch.int, device=self.device))
-        self.get_logger().info(f'{torch.max(mapped_points_idx_flat)} > {grid_z_count_flat.size(0)} {torch.max(mapped_points_idx_flat) > grid_z_count_flat.size(0)}')
-        
+
         self.grid_z_sum = self.pad_grid(self.grid_z_sum, d_min_x, d_max_x, d_min_y, d_max_y)
         grid_z_sum_flat = self.grid_z_sum.view(self.cells_x * self.cells_y)
         grid_z_sum_flat.index_add_(0, mapped_points_idx_flat, mapped_points[:,2].squeeze())
-        
-        self.grid_z_mean = (grid_z_sum_flat / grid_z_count_flat).view(self.cells_x, self.cells_y)
+
+        grid_z_mean = (grid_z_sum_flat / grid_z_count_flat).view(self.cells_x, self.cells_y)
 
         x_grid = torch.arange(self.min_x * self.grid_res, self.min_x * self.grid_res + self.cells_x * self.grid_res, self.grid_res, dtype=torch.float32, device=self.device)
         y_grid = torch.arange(self.min_y * self.grid_res, self.min_y * self.grid_res + self.cells_y * self.grid_res, self.grid_res, dtype=torch.float32, device=self.device)
         X, Y = torch.meshgrid(x_grid, y_grid, indexing='ij')
-        Z_U = torch.stack((X.flatten(), Y.flatten(), self.grid_z_mean.flatten()), dim=1)
+        Z_U = torch.stack((X.flatten(), Y.flatten(), grid_z_mean.flatten()), dim=1)
 
-        self.publish_pointcloud2(Z_U, msg.header)
-
-        # raw_intensity = torch.tensor(raw_points_dict['intensity'] / 65535.0, dtype=torch.float32, device=self.device, requires_grad=True)
-        # intensity = raw_intensity[valid_mask]
+        self.publish_pointcloud(Z_U, msg.header)
 
         # class_mask = self.semseg()
 
-        # self.publish_pointcloud2(mapped_points, msg.header)
+        # self.publish_pointcloud(mapped_points, msg.header)
 
-        # mapped_colors = self.image[filtered_points_cam_frame[:,1], filtered_points_cam_frame[:,0]]
         # mapped_semantics = class_mask[filtered_points_cam_frame[:,1], filtered_points_cam_frame[:,0]]
         # mapped_intensity = intensity[cam_mask]
 
