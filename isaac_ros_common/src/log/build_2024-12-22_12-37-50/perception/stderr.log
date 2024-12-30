@@ -1,7 +1,0 @@
-[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/perception/src/imu_orientation.cpp:[m[K In member function ‘[01m[Kvoid ImuOrient::handle_imu(std::shared_ptr<sensor_msgs::msg::Imu_<std::allocator<void> > >)[m[K’:
-[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/perception/src/imu_orientation.cpp:108:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kroll_lpf[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  108 |     double [01;35m[Kroll_lpf[m[K = normalize_angle(imu_data.alpha_lpf * roll_acc + (1 - imu_data.alpha_lpf) * imu_data.roll_acc_prev);
-      |            [01;35m[K^~~~~~~~[m[K
-[01m[K/workspaces/isaac_ros-dev/isaac_ros_common/src/perception/src/imu_orientation.cpp:109:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpitch_lpf[m[K’ [[01;35m[K-Wunused-variable[m[K]
-  109 |     double [01;35m[Kpitch_lpf[m[K = normalize_angle(0.63704517697 + (imu_data.alpha_lpf * pitch_acc + (1 - imu_data.alpha_lpf) *  imu_data.pitch_acc_prev));
-      |            [01;35m[K^~~~~~~~~[m[K
