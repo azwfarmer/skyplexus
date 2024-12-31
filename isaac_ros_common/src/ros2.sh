@@ -10,4 +10,4 @@ fi
 . /workspaces/isaac_ros-dev/isaac_ros_common/src/install/setup.bash
 
 # Execute the command passed as arguments
-"$@"
+"ros2 $@"
