@@ -22,7 +22,6 @@ setup(
         'console_scripts': [
             'fast_depth = py_perception.fast_depth:main',
             'map_gen = py_perception.map_gen:main',
-            'map_gen_old = py_perception.map_gen_old:main'
         ],
     },
 )
