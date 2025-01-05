@@ -143,6 +143,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
     ros-humble-statistics-msgs \
     ros-humble-backward-ros \
     libdw-dev \
+    net-tools \
     && rm -rf /var/lib/apt/lists/*
 
 COPY ptp4l.conf /etc/linuxptp/ptp4l.conf
