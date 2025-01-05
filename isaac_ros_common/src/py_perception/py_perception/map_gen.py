@@ -582,7 +582,6 @@ class MapGen(Node):
             return
 
         mapped_points_idx = torch.floor(mapped_points[:,:2] / self.grid_res).int()
-        (mapped_points_idx, "mapped_points_idx")
 
         max_x = torch.max(mapped_points_idx[:,0]).item()
         max_y = torch.max(mapped_points_idx[:,1]).item()
@@ -613,7 +612,6 @@ class MapGen(Node):
         mapped_points_idx[:,0] -= self.min_x
         mapped_points_idx[:,1] -= self.min_y
         mapped_points_idx_flat = mapped_points_idx[:,1] + mapped_points_idx[:,0] * self.cells_y
-        (mapped_points_idx_flat, "mapped_points_idx_flat")
 
         grid_z_mean = grid_h_mean = grid_s_mean = grid_v_mean = torch.zeros((self.cells_x, self.cells_y), dtype=torch.float32, device=self.device) 
         self.grid_z_sum = self.pad_grid(self.grid_z_sum, d_min_x, d_max_x, d_min_y, d_max_y)
