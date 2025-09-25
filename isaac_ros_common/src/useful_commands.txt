@@ -7,9 +7,6 @@ follow setup instructions: https://nvidia-isaac-ros.github.io/getting_started/ha
 
 and possibly here: https://nvidia-isaac-ros.github.io/getting_started/hardware_setup/compute/index.html#jetson-platforms
 
-git config --global user.email "mtkliema@gmail.com"
-git config --global user.name "Matthew Kliemann"
-
 (on local machine)
 ssh-copy-id aaron@100.85.95.43  to add to known_hosted/authorized_users
 
