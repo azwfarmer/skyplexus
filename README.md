@@ -9,6 +9,10 @@ Personal project, built solo during the winter of my senior year of high school 
 
 Flight over my house and the surrounding street. Flight data is not included in this repository.
 
+![Uncolored map in RViz](media/rviz_map.png)
+
+Uncolored version of the map, viewed in RViz.
+
 ## Architecture
 
 ```mermaid
