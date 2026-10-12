@@ -16,11 +16,10 @@ setup(
     maintainer='aaron',
     maintainer_email='aaronzzwang@gmail.com',
     description='Python scripts for perception',
-    license='Apache-2.0',
+    license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'fast_depth = py_perception.fast_depth:main',
             'map_gen = py_perception.map_gen:main',
         ],
     },

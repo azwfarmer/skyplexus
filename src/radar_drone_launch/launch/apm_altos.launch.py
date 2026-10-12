@@ -8,28 +8,30 @@ from launch_ros.actions import Node
 import launch
 import launch_ros.actions
 import numpy as np
-from scipy.spatial.transform import Rotation as R
 
 def generate_launch_description():
     # jetson_stats = IncludeLaunchDescription(
     #     PythonLaunchDescriptionSource(['/opt/ros/humble/share/isaac_ros_jetson_stats/launch/jtop.launch.py']))
 
+    pkg_share = get_package_share_directory('radar_drone_launch')
+
     orbbec_camera = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/workspaces/isaac_ros-dev/isaac_ros_common/src/OrbbecSDK_ROS2/orbbec_camera/launch/gemini_330_series.launch.py'])
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('orbbec_camera'), 'launch', 'gemini_330_series.launch.py')])
     )
 
     mavros_apm = IncludeLaunchDescription(
-        XMLLaunchDescriptionSource(['/workspaces/isaac_ros-dev/isaac_ros_common/src/radar_drone_launch/launch/mavros/apm.launch']),
+        XMLLaunchDescriptionSource([os.path.join(pkg_share, 'launch', 'mavros', 'apm.launch')]),
     )
 
     ouster_driver = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(['/workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-ros/launch/driver.launch.py']),
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('ouster_ros'), 'launch', 'driver.launch.py')]),
         launch_arguments={
-            'params_file': '/workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-ros/config/driver_params.yaml',
+            'params_file': os.path.join(pkg_share, 'config', 'ouster_driver_params.yaml'),
             'ouster_ns': 'ouster',
             'os_driver_name': 'os_driver',
             'viz': 'False',
-            'rviz_config': '/workspaces/isaac_ros-dev/isaac_ros_common/src/ouster-ros/ouster-ros/config/viz.rviz'
         }.items()
     )
 
@@ -43,7 +45,7 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='log',
-        arguments=['-d', '/workspaces/isaac_ros-dev/isaac_ros_common/src/rviz_camlidrad.rviz']
+        arguments=['-d', os.path.join(pkg_share, 'config', 'rviz_camlidrad.rviz')]
     )
     
     base_link2payload = Node(

@@ -5,7 +5,18 @@
   <version>0.0.0</version>
   <description>Launch all packages and nodes</description>
   <maintainer email="aaronzzwang@gmail.com">aaron</maintainer>
-  <license>Apache-2.0</license>
+  <license>MIT</license>
+
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>launch_xml</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros2bag</exec_depend>
+  <exec_depend>mavros</exec_depend>
+  <exec_depend>ouster_ros</exec_depend>
+  <exec_depend>orbbec_camera</exec_depend>
+  <exec_depend>py_perception</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

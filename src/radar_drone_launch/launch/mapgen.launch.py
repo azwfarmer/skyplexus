@@ -187,7 +187,7 @@ def generate_launch_description():
         executable='rviz2',
         name='rviz2',
         output='log',
-        arguments=['-d', '/workspaces/isaac_ros-dev/isaac_ros_common/src/rviz_camlidrad.rviz']
+        arguments=['-d', os.path.join(get_package_share_directory('radar_drone_launch'), 'config', 'rviz_camlidrad.rviz')]
     )
 
     return LaunchDescription([
