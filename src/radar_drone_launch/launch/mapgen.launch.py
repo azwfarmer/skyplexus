@@ -37,17 +37,6 @@ def generate_launch_description():
             '--frame-id', 'payload', '--child-frame-id', 'os_sensor']
     )
 
-
-    # payload2radar = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='payload2radar',
-    #     arguments=['--x', '0.11', '--y', '0.008', '--z', '0.116',
-    #         '--roll', '0.0', '--pitch', '0.0','--yaw', '0.0',
-    #         '--frame-id', 'payload', '--child-frame-id', 'altosRadar']
-    # )
-
-
     payload2camera_link = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -101,56 +90,6 @@ def generate_launch_description():
         ]
     )
 
-    # camera_color_frame2camera_accel_frame = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='camera_color_frame2camera_accel_frame',
-    #     arguments=[
-    #         '-0.0024994454383850096', '-0.018502710342407226', '0.0002345915138721466',
-    #         '-0.005852920934557915', '0.0007018941687420011', '0.0002480990660842508', '0.9999825954437256',
-    #         'camera_color_frame','camera_accel_frame']
-    # )
-
-    # camera_accel_frame2camera_accel_optical_frame = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='camera_accel_frame2camera_accel_optical_frame',
-    #     arguments=[
-    #         '0', '0', '0',
-    #         '-0.5', '0.5', '-0.5', '0.5',
-    #         'camera_accel_frame','camera_accel_optical_frame']
-    # )
-
-    # camera_color_frame2camera_gyro_frame = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='camera_color_frame2camera_gyro_frame',
-    #     arguments=[
-    #         '-0.0024994454383850096', '-0.018502710342407226', '0.0002345915138721466',
-    #         '-0.005852920934557915', '0.0007018941687420011', '0.0002480990660842508', '0.9999825954437256',
-    #         'camera_color_frame','camera_gyro_frame']
-    # )
-
-    # camera_gyro_frame2camera_gyro_optical_frame = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='camera_gyro_frame2camera_gyro_optical_frame',
-    #     arguments=[
-    #         '0', '0', '0',
-    #         '-0.5', '0.5', '-0.5', '0.5',
-    #         'camera_gyro_frame','camera_gyro_optical_frame']
-    # )
-
-    # camera_link2camera_color_frame = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='camera_link2camera_color_frame',
-    #     arguments=[
-    #         '0', '0', '0',
-    #         '0', '0', '0', '1',
-    #         'camera_link','camera_color_frame']
-    # )
-
     os_sensor2os_lidar = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -193,18 +132,12 @@ def generate_launch_description():
     return LaunchDescription([
         map2home,
         base_link2payload,
-        # payload2radar,
         payload2os_sensor,
         payload2camera_link,
         camera_color_frame2camera_color_optical_frame,
         camera_depth_frame2camera_depth_optical_frame,
         camera_depth_frame2camera_color_frame,
         camera_link2camera_depth_frame,
-        # camera_color_frame2camera_accel_frame,
-        # camera_accel_frame2camera_accel_optical_frame,
-        # camera_color_frame2camera_gyro_frame,
-        # camera_gyro_frame2camera_gyro_optical_frame,
-        # camera_link2camera_color_frame,
         os_sensor2os_lidar,
         os_sensor2os_imu,
         mapgen,

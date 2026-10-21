@@ -10,9 +10,6 @@ import launch_ros.actions
 import numpy as np
 
 def generate_launch_description():
-    # jetson_stats = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(['/opt/ros/humble/share/isaac_ros_jetson_stats/launch/jtop.launch.py']))
-
     pkg_share = get_package_share_directory('radar_drone_launch')
 
     orbbec_camera = IncludeLaunchDescription(

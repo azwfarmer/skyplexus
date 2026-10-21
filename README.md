@@ -59,14 +59,36 @@ Solid edges are static transforms from `mapgen.launch.py`; the dashed edge is pu
 
 ## How map_gen works
 
-All tensors stay on the GPU.
+```mermaid
+flowchart LR
+    pts["/ouster/points<br/>LiDAR scan"]
+    tfs["/tf<br/>os_sensor → camera_color_optical_frame<br/>os_sensor → home"]
+    img["/camera/color/image_raw<br/>1280×720 RGB"]
 
-1. Keeps the latest camera frame from `/camera/color/image_raw`.
-2. For each LiDAR scan on `/ouster/points`, looks up `os_sensor → camera_color_optical_frame` and `os_sensor → home`.
-3. Projects the points through the camera intrinsics and keeps the ones that land inside the 1280×720 image.
-4. Samples the pixel color under each kept point and transforms the points into `home`.
-5. Bins the points into 0.25 m cells, padding the grid whenever a scan reaches past its edge.
-6. Accumulates height and color sums and counts per cell with `index_add_`, then publishes the cell means as an XYZRGB `PointCloud2` on `/pcl`.
+    subgraph gpu["map_gen · PyTorch on CUDA · all tensors stay on the GPU"]
+        direction LR
+        proj["Project to image plane<br/>K · [R|t] · X<br/>keep in-frame points"]
+        color["Sample pixel color<br/>under each point"]
+        home["Transform points<br/>into home frame"]
+        bin["Bin into 0.25 m cells<br/>grow grid when a scan<br/>reaches past its edge"]
+        acc["Scatter-add z and RGB<br/>sums + counts (index_add_)<br/>take per-cell means"]
+        proj --> color --> home --> bin --> acc
+    end
+
+    out["/pcl<br/>XYZRGB PointCloud2<br/>2.5D elevation map"]
+
+    pts --> proj
+    tfs --> proj
+    tfs --> home
+    img --> color
+    acc --> out
+```
+
+`map_gen` is a single ROS 2 node with two subscriptions and one publisher. The camera callback keeps only the most recent `/camera/color/image_raw` frame as a GPU tensor. The LiDAR callback does all the work: for every `/ouster/points` scan it looks up `os_sensor → camera_color_optical_frame` and `os_sensor → home` from TF and moves the scan onto the GPU.
+
+Each scan is projected through the camera intrinsics in a single matrix product, and only the points that land inside the 1280×720 image are kept. The pixel under each surviving point gives its color, and the same points are transformed into the `home` frame, which is the fixed grid origin.
+
+Points are binned into 0.25 m cells by their map-frame x and y. The grid is not pre-sized: whenever a scan reaches outside the current bounds, the sum and count tensors are padded to the new extent with existing cells left in place. Each scan's height and RGB values are scatter-added into their cells with `index_add_` alongside a hit count, so the per-cell means stay cheap to compute. The cell centers, mean heights and packed mean colors are published as an XYZRGB `PointCloud2` on `/pcl` after every scan, which is what RViz displays.
 
 ## Code
 
